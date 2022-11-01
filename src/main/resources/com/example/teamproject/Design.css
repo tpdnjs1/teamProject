@@ -1,0 +1,45 @@
+.Btn {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-color: rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.firstColor {
+    -fx-background-color: rgba(214, 214, 208, 0.5);
+}
+
+.BackgroundColor {
+    -fx-background-color: white;
+}
+
+.LogoImage {
+    -fx-background-image: url(Cresent.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.Calendar {
+    -fx-background-image: url(calendar.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.Setting {
+    -fx-background-image: url(setting.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.Questions {
+    -fx-background-image: url(question.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+
+
+

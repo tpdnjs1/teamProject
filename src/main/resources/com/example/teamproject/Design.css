@@ -8,16 +8,47 @@
     -fx-border-width: 0px 0px 3px 0px;
 }
 
-.firstColor {
-    -fx-background-color: rgba(214, 214, 208, 0.5);
+.round {
+    -fx-background-radius: 30px;
 }
+
+.firstColor {
+    -fx-background-color: rgba(178, 181, 214, 0.8);
+}
+
+.secondColor {
+    -fx-background-color: rgba(188, 192, 227, 0.8);
+}
+
+.thirdColor {
+    -fx-background-color: rgba(157, 159, 189, 0.74);
+}
+
+.fourthColor {
+    -fx-background-color: rgba(72, 73, 87, 0.2);
+}
+
+.fifthColor {
+    -fx-background-color: rgba(125, 127, 150, 0.59);
+}
+
 
 .BackgroundColor {
     -fx-background-color: white;
 }
 
+.white {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+}
+
 .LogoImage {
     -fx-background-image: url(Cresent.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.CresentImage {
+    -fx-background-image: url(Moon.png);
     -fx-background-size: cover;
     -fx-background-position: center;
 }

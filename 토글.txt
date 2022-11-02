@@ -1,0 +1,14 @@
+    @FXML
+    private ToggleButton 이름;
+    @FXML
+    private ToggleButton 이름;
+    @FXML
+    private ToggleGroup 그룹이름;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        그룹이름 = new ToggleGroup();
+    }
+
+
+//이러고 fxml들어가서 inspector설정에 토글그룹에 그룹 이름 적으면 돼.

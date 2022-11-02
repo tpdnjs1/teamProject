@@ -3,6 +3,11 @@
     -fx-border-color: rgba(0, 0, 0, 0);
 }
 
+.BtnRound {
+    -fx-background-radius: 8px;
+}
+
+
 .round {
     -fx-background-radius: 30px;
 }
@@ -29,7 +34,7 @@
 
 
 .BackgroundColor {
-    -fx-background-color: white;
+    -fx-background-color: rgba(160, 160, 160, 0.1);
 }
 
 .white {
@@ -69,6 +74,11 @@
 .shadow {
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 3, 3);
 }
+
+.shadowPane {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 5, 5);
+}
+
 
 
 

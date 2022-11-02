@@ -5,9 +5,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" styleClass="BackgroundColor" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Main">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Main">
    <children>
-      <Pane layoutX="85.0" prefHeight="650.0" prefWidth="815.0" styleClass="firstColor" stylesheets="@Design.css" />
       <Button layoutX="26.0" layoutY="257.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" stylesheets="@Design.css">
          <styleClass>
             <String fx:value="Btn" />
@@ -27,5 +26,6 @@
          </styleClass>
       </Button>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="65.0" prefWidth="65.0" styleClass="LogoImage" stylesheets="@Design.css" />
+      <Pane layoutX="87.0" prefHeight="650.0" prefWidth="815.0" styleClass="BackgroundColor" stylesheets="@Design.css" />
    </children>
 </AnchorPane>

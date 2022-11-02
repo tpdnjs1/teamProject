@@ -3,10 +3,6 @@
     -fx-border-color: rgba(0, 0, 0, 0);
 }
 
-.Btn:hover {
-
-}
-
 .round {
     -fx-background-radius: 30px;
 }

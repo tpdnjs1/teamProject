@@ -32,11 +32,7 @@
             </Pane>
             <TextField layoutX="341.0" layoutY="184.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter ID" />
             <TextField layoutX="341.0" layoutY="232.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter PW" />
-            <Button layoutX="366.0" layoutY="297.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" stylesheets="@Design.css" text="Login">
-               <styleClass>
-                  <String fx:value="firstColor" />
-                  <String fx:value="shadow" />
-               </styleClass></Button>
+            <Button layoutX="366.0" layoutY="297.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="firstColor" stylesheets="@Design.css" text="Login" />
             <Label layoutX="388.0" layoutY="119.0" text="Users Login">
                <font>
                   <Font name="HYGothic-Extra" size="24.0" />

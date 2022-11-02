@@ -3,6 +3,11 @@
     -fx-border-color: rgba(0, 0, 0, 0);
 }
 
+.Btn:hover {
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
 .round {
     -fx-background-radius: 30px;
 }
@@ -64,10 +69,6 @@
     -fx-background-image: url(question.png);
     -fx-background-size: cover;
     -fx-background-position: center;
-}
-
-.shadow {
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 3, 3);
 }
 
 

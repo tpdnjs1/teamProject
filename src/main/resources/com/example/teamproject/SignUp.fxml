@@ -29,7 +29,7 @@
             <TextField layoutX="341.0" layoutY="159.0" prefHeight="30.0" prefWidth="250.0" promptText="ID" />
             <TextField layoutX="341.0" layoutY="210.0" prefHeight="30.0" prefWidth="250.0" promptText="Name" />
             <TextField layoutX="341.0" layoutY="262.0" prefHeight="30.0" prefWidth="250.0" promptText="PW" />
-            <Button layoutX="366.0" layoutY="327.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" stylesheets="@Design.css" text="Login">
+            <Button layoutX="366.0" layoutY="327.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" stylesheets="@Design.css" text="Create">
                <styleClass>
                   <String fx:value="firstColor" />
                   <String fx:value="shadow" />

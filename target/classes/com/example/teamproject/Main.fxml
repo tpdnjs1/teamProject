@@ -2,12 +2,13 @@
 
 <?import java.lang.String?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" styleClass="BackgroundColor" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Main">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Main">
    <children>
-      <Pane layoutX="85.0" prefHeight="650.0" prefWidth="815.0" styleClass="firstColor" stylesheets="@Design.css" />
       <Button layoutX="26.0" layoutY="257.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" stylesheets="@Design.css">
          <styleClass>
             <String fx:value="Btn" />
@@ -27,5 +28,62 @@
          </styleClass>
       </Button>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="65.0" prefWidth="65.0" styleClass="LogoImage" stylesheets="@Design.css" />
+      <Pane layoutX="87.0" prefHeight="650.0" prefWidth="815.0" styleClass="BackgroundColor" stylesheets="@Design.css">
+         <children>
+            <Pane layoutX="14.0" layoutY="20.0" prefHeight="610.0" prefWidth="550.0" stylesheets="@Design.css">
+               <styleClass>
+                  <String fx:value="shadowPane" />
+                  <String fx:value="white" />
+                  <String fx:value="round" />
+               </styleClass>
+               <children>
+                  <Label layoutX="26.0" layoutY="14.0" text="Calendar">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="581.0" layoutY="20.0" prefHeight="93.0" prefWidth="220.0" stylesheets="@Design.css">
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="shadowPane" />
+                  <String fx:value="round" />
+               </styleClass>
+               <children>
+                  <Label layoutX="57.0" layoutY="14.0" text="Total monthly usage">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="39.0" text="30000">
+                     <font>
+                        <Font name="Calibri" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="581.0" layoutY="127.0" prefHeight="503.0" prefWidth="220.0" stylesheets="@Design.css">
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="shadowPane" />
+                  <String fx:value="round" />
+               </styleClass>
+               <children>
+                  <Label layoutX="88.0" layoutY="12.0" text="Diary">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="166.0" layoutY="46.0" mnemonicParsing="false" stylesheets="@Design.css" text="Add">
+                     <styleClass>
+                        <String fx:value="fourthColor" />
+                        <String fx:value="BtnRound" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </Pane>
+         </children></Pane>
    </children>
 </AnchorPane>

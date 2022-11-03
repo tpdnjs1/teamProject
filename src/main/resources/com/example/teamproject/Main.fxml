@@ -26,6 +26,15 @@
          </styleClass>
       </Button>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="65.0" prefWidth="65.0" styleClass="LogoImage" stylesheets="@Design.css" />
-      <Pane layoutX="87.0" prefHeight="650.0" prefWidth="815.0" styleClass="BackgroundColor" stylesheets="@Design.css" />
+      <Pane layoutX="87.0" prefHeight="650.0" prefWidth="815.0" styleClass="BackgroundColor" stylesheets="@Design.css">
+         <children>
+            <Pane layoutX="14.0" layoutY="20.0" prefHeight="610.0" prefWidth="550.0" stylesheets="@Design.css">
+               <styleClass>
+                  <String fx:value="shadowPane" />
+                  <String fx:value="white" />
+                  <String fx:value="round" />
+               </styleClass>
+            </Pane>
+         </children></Pane>
    </children>
 </AnchorPane>

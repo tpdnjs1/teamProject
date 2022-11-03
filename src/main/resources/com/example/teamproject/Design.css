@@ -34,7 +34,7 @@
 
 
 .BackgroundColor {
-    -fx-background-color: rgba(160, 160, 160, 0.1);
+    -fx-background-color: rgba(160, 160, 160, 0.3);
 }
 
 .white {
@@ -76,7 +76,7 @@
 }
 
 .shadowPane {
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 5, 5);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 8, 0, 3, 3);
 }
 
 

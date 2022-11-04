@@ -46,7 +46,7 @@
                   </Label>
                </children>
             </Pane>
-            <Label layoutX="46.0" layoutY="63.0" text="Q">
+            <Label layoutX="46.0" layoutY="63.0" text="Q . ">
                <font>
                   <Font name="Microsoft YaHei" size="48.0" />
                </font>
@@ -69,8 +69,8 @@
                   </Label>
                </children>
             </HBox>
-            <Label layoutX="112.0" layoutY="87.0" text="질문 내용" />
-            <Label layoutX="534.0" layoutY="170.0" text="A">
+            <Label layoutX="125.0" layoutY="88.0" text="질문 내용" />
+            <Label layoutX="534.0" layoutY="171.0" text="A">
                <font>
                   <Font name="Microsoft YaHei UI" size="48.0" />
                </font>

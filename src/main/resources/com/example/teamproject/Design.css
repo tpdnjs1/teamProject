@@ -53,6 +53,44 @@
     -fx-background-position: center;
 }
 
+.Circle {
+    -fx-background-image: url(circle.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.EmptyCricle {
+    -fx-background-image: url(empty_circle.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.SPCalendar {
+    -fx-background-image: url(calendar_splash.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.Diary {
+    -fx-background-image: url(diary.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.FAQ {
+    -fx-background-image: url(FAQ.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.Money {
+    -fx-background-image: url(Money.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+
+
 .Calendar {
     -fx-background-image: url(calendar.png);
     -fx-background-size: cover;

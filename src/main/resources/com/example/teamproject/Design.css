@@ -42,7 +42,7 @@
 }
 
 .LogoImage {
-    -fx-background-image: url(images/Cresent.png);
+    -fx-background-image: url(images/Crescent.png);
     -fx-background-size: cover;
     -fx-background-position: center;
 }

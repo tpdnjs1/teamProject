@@ -42,13 +42,13 @@
 }
 
 .LogoImage {
-    -fx-background-image: url(Cresent.png);
+    -fx-background-image: url(images/Cresent.png);
     -fx-background-size: cover;
     -fx-background-position: center;
 }
 
 .CresentImage {
-    -fx-background-image: url(Moon.png);
+    -fx-background-image: url(images/Moon.png);
     -fx-background-size: cover;
     -fx-background-position: center;
 }
@@ -92,19 +92,19 @@
 
 
 .Calendar {
-    -fx-background-image: url(calendar.png);
+    -fx-background-image: url(images/calendar.png);
     -fx-background-size: cover;
     -fx-background-position: center;
 }
 
 .Setting {
-    -fx-background-image: url(setting.png);
+    -fx-background-image: url(images/setting.png);
     -fx-background-size: cover;
     -fx-background-position: center;
 }
 
 .Questions {
-    -fx-background-image: url(question.png);
+    -fx-background-image: url(images/question.png);
     -fx-background-size: cover;
     -fx-background-position: center;
 }

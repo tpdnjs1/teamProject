@@ -7,6 +7,13 @@
     -fx-background-radius: 8px;
 }
 
+.StartBtn {
+    -fx-border-color: Black;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
 
 .round {
     -fx-background-radius: 30px;
@@ -41,6 +48,10 @@
     -fx-background-color: rgba(255, 255, 255, 0.6);
 }
 
+.black {
+    -fx-background-color: Black;
+}
+
 .LogoImage {
     -fx-background-image: url(images/Crescent.png);
     -fx-background-size: cover;
@@ -52,6 +63,44 @@
     -fx-background-size: cover;
     -fx-background-position: center;
 }
+
+.Circle {
+    -fx-background-image: url(images/circle.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.EmptyCricle {
+    -fx-background-image: url(images/empty_circle.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.SPCalendar {
+    -fx-background-image: url(images/calendar_splash.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.Diary {
+    -fx-background-image: url(images/diary.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.FAQ {
+    -fx-background-image: url(images/FAQ.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.Money {
+    -fx-background-image: url(images/Money.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+
 
 .Calendar {
     -fx-background-image: url(images/calendar.png);
@@ -73,6 +122,10 @@
 
 .shadow {
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 3, 3);
+}
+
+.innerShadow {
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 3, 3);
 }
 
 .shadowPane {

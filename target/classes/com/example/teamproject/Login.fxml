@@ -30,9 +30,11 @@
                   </Label>
                </children>
             </Pane>
+
             <TextField layoutX="341.0" layoutY="184.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter ID" />
             <TextField layoutX="341.0" layoutY="232.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter PW" />
-            <Button layoutX="366.0" layoutY="297.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" stylesheets="@Design.css" text="Login">
+            <Button fx:id="loginBtn" layoutX="366.0" layoutY="297.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="200.0" stylesheets="@Design.css" text="Login">
+
                <styleClass>
                   <String fx:value="firstColor" />
                   <String fx:value="shadow" />
@@ -46,6 +48,8 @@
          </children>
       </Pane>
       <Label layoutX="534.0" layoutY="566.0" text="Don't hava an account?" textFill="#666666d6" />
+
       <Label layoutX="680.0" layoutY="566.0" text="Create Account" textFill="#916cbc" />
+
    </children>
 </AnchorPane>

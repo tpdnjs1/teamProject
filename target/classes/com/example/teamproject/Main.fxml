@@ -75,7 +75,7 @@
                         <Font name="Franklin Gothic Medium" size="20.0" />
                      </font>
                   </Label>
-                  <Button layoutX="166.0" layoutY="46.0" mnemonicParsing="false" stylesheets="@Design.css" text="Add">
+                  <Button fx:id="add" layoutX="166.0" layoutY="46.0" mnemonicParsing="false" onAction="#popUpPage" stylesheets="@Design.css" text="Add">
                      <styleClass>
                         <String fx:value="fourthColor" />
                         <String fx:value="BtnRound" />

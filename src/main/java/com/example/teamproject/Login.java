@@ -10,7 +10,6 @@ public class Login {
 
     @FXML
     private Button loginBtn;
-
     @FXML
     private Label signUp;
     @FXML

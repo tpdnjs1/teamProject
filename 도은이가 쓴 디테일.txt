@@ -1,10 +1,9 @@
 Account Book Calendar
-캘린더에 수입과 지출을 적고 한눈에 볼 수 있다.
+You can write down your income and expenditure on your calendar and see it at a glance.
 
 Diary
-날마다 그날그날 겪은 일이나 생각을 기록 할 수 있다.
+You can record what you have experienced or thought every day.
 
 Q&A
-자기계발 질문이 정각에 업데이트 되어서 매일매일 
-자신을 돌아볼 수 있다 
-
+Self-improvement questions are updated every day 
+to be able to reflect on oneself

@@ -30,5 +30,10 @@
       <Pane layoutX="654.0" layoutY="469.0" prefHeight="10.0" prefWidth="10.0" styleClass="Circle" stylesheets="@Design.css" />
       <Pane layoutX="676.0" layoutY="469.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
       <Pane layoutX="697.0" layoutY="469.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
+      <Label fx:id="skip" layoutX="855.0" layoutY="14.0" onMouseClicked="#skipPage" text="Skip" textFill="#8a8a8a">
+         <font>
+            <Font name="Corbel" size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

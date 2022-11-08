@@ -30,7 +30,7 @@
             <Font name="HYGraphic-Medium" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="855.0" layoutY="14.0" text="Skip" textFill="#8a8a8a">
+      <Label fx:id="skip" layoutX="855.0" layoutY="14.0" onMouseClicked="#skipPage" text="Skip" textFill="#8a8a8a">
          <font>
             <Font name="Corbel" size="16.0" />
          </font>

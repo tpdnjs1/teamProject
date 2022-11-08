@@ -10,7 +10,9 @@ public class SplashScreen3 {
     private Button btn;
 
     @FXML
-    private void nextPage(){
-        movePage.changeScene("Main", btn);
+    private void nextPage() {
+        movePage.changeScene("Login", btn);
     }
+
+
 }

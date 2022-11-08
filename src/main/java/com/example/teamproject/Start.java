@@ -9,6 +9,7 @@ public class Start {
     @FXML
     private Button btn;
 
+    @FXML
     private void nextPage(){
         movePage.changeScene("SplashScreen", btn);
     }

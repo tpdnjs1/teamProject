@@ -10,15 +10,15 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="900.0" styleClass="fifthColor" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SignUp">
    <children>
-      <Pane layoutX="100.0" layoutY="100.0" prefHeight="450.0" prefWidth="700.0" stylesheets="@Design.css">
+      <Pane layoutX="100.0" layoutY="100.0" prefHeight="450.0" prefWidth="700.0">
          <children>
-            <Pane prefHeight="450.0" prefWidth="220.0" stylesheets="@Design.css">
+            <Pane prefHeight="450.0" prefWidth="220.0">
                <styleClass>
                   <String fx:value="white" />
                   <String fx:value="round" />
                </styleClass>
                <children>
-                  <Pane layoutX="53.0" layoutY="139.0" prefHeight="115.0" prefWidth="115.0" styleClass="CresentImage" stylesheets="@Design.css" />
+                  <Pane layoutX="53.0" layoutY="139.0" prefHeight="115.0" prefWidth="115.0" styleClass="CresentImage" />
                   <Label layoutX="26.0" layoutY="270.0" text="Cresent Account Book">
                      <font>
                         <Font name="Source Code Pro Black" size="14.0" />
@@ -27,10 +27,10 @@
                </children>
             </Pane>
 
-            <TextField layoutX="341.0" layoutY="159.0" prefHeight="30.0" prefWidth="250.0" promptText="ID" />
-            <TextField  layoutX="341.0" layoutY="210.0" prefHeight="30.0" prefWidth="250.0" promptText="Name" />
-            <TextField  layoutX="341.0" layoutY="262.0" prefHeight="30.0" prefWidth="250.0" promptText="PW" />
-            <Button  layoutX="366.0" layoutY="327.0" mnemonicParsing="false"  prefHeight="35.0" prefWidth="200.0" stylesheets="@Design.css" text="Create">
+            <TextField fx:id="id" layoutX="341.0" layoutY="159.0" prefHeight="30.0" prefWidth="250.0" promptText="ID" />
+            <TextField fx:id="name" layoutX="341.0" layoutY="210.0" prefHeight="30.0" prefWidth="250.0" promptText="Name" />
+            <TextField fx:id="pw" layoutX="341.0" layoutY="262.0" prefHeight="30.0" prefWidth="250.0" promptText="PW" />
+            <Button fx:id="joinBtn" layoutX="366.0" layoutY="327.0" mnemonicParsing="false" onAction="#insertMember" prefHeight="35.0" prefWidth="200.0" text="Create">
                <styleClass>
                   <String fx:value="firstColor" />
                   <String fx:value="shadow" />
@@ -49,7 +49,7 @@
       </Pane>
       <Label layoutX="557.0" layoutY="566.0" text="Already have an account" textFill="#666666d6" />
 
-      <Label  layoutX="716.0" layoutY="566.0"  text="Login" textFill="#916cbc" />
+      <Label fx:id="loginLabel" layoutX="716.0" layoutY="566.0" onMouseClicked="#changeSceneToLogin" text="Login" textFill="#916cbc" />
 
    </children>
 </AnchorPane>

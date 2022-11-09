@@ -1,12 +1,8 @@
 package com.example.teamproject;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -16,25 +12,29 @@ import java.util.ResourceBundle;
 
 public class Login implements Initializable {
 
+    MovePage movePage = new MovePage();
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
 
     @FXML
-    private TextField LoginId;
+    private TextField loginId;
     @FXML
-    private PasswordField LoginPw;
+    private PasswordField loginPw;
     @FXML
-    private Button LoginBtn;
+    private Button loginBtn;
+    @FXML
+    private Label signUpLabel;
 
     String id;
     String pw;
 
     // id, pw 존재하는지 데이터 베이스에서 조회
     public void changeToMain() {
-        String getID = LoginId.getText();
-        String getPW = LoginPw.getText();
+        String getID = loginId.getText();
+        String getPW = Login.this.loginPw.getText();
         DBUtil db = new DBUtil();
         Connection con = db.getConnection();
 
@@ -62,17 +62,8 @@ public class Login implements Initializable {
         //id, pw TextField 입력 확인
         if(getID.equals(id)) {
             if(getPW.equals(pw)) {
-                try {
-                    //화면 넘김
-                    Parent login = FXMLLoader.load(getClass().getResource("Main.fxml"));
-                    Scene scene = new Scene(login);
-                    Stage primaryStage = (Stage) LoginBtn.getScene().getWindow();
-                    primaryStage.setScene(scene);
-                    //스타일 시트 연결
-                    scene.getStylesheets().add(getClass().getResource("Design.css").toExternalForm());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+                //화면 넘김
+                movePage.changeScene("Main", loginBtn);
             }else {
                 //비밀번호 불일치시 나오는 알람
                 alert("비밀번호를 다시 입력해주세요.", null);
@@ -93,24 +84,9 @@ public class Login implements Initializable {
         alert.show();
     }
 
-
-
-
-
     // sigh-up 화면으로 이동하는 라벨
-    @FXML
-    private Label SingUpLabel;
-    public void changeScene() {
-        try {
-            Parent nextScene
-                    = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
-            Scene scene = new Scene(nextScene);
-            Stage primaryStage = (Stage) SingUpLabel.getScene().getWindow();
-            primaryStage.setScene(scene);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    public void changeToSignUp(){
+        movePage.changeSceneLabel("SignUp", signUpLabel);
     }
 
 

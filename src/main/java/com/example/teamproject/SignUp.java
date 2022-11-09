@@ -14,6 +14,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 public class SignUp {
+    MovePage movePage = new MovePage();
+
     @FXML
     private TextField id;
     @FXML
@@ -22,6 +24,8 @@ public class SignUp {
     private TextField name;
     @FXML
     private Button joinBtn;
+    @FXML
+    private Label loginLabel;
 
     public void insertMember() {
         DBUtil db = new DBUtil();
@@ -30,13 +34,14 @@ public class SignUp {
         PreparedStatement pstmt = null;
         String sql = "INSERT INTO users(id, pw, name) VALUES(?,?,?)";
         try {
-            pstmt = ((Connection) conn).prepareStatement(sql);
+            pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, id.getText());
             pstmt.setString(2, pw.getText());
             pstmt.setString(3, name.getText());
             pstmt.executeUpdate();
             alert("회원가입이 정상적으로 완료되었습니다.", null);
 
+            //알트 확인 버튼 클릭되면 화면 전환 시키고싶음.
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -54,19 +59,7 @@ public class SignUp {
     }
 
     //  화면 전환 버튼 구현
-
-    @FXML
-    private Label LoginLabel;
     public void changeSceneToLogin() {
-        try {
-            Parent nextScene
-                    = FXMLLoader.load(getClass().getResource("Login.fxml"));
-            Scene scene = new Scene(nextScene);
-            Stage primaryStage = (Stage) LoginLabel.getScene().getWindow();
-            primaryStage.setScene(scene);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        movePage.changeSceneLabel("Login", loginLabel);
     }
 }

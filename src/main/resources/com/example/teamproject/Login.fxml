@@ -11,13 +11,13 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="900.0" styleClass="fifthColor" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Login">
    <children>
-      <Pane layoutX="100.0" layoutY="100.0" prefHeight="450.0" prefWidth="700.0" stylesheets="@Design.css">
+      <Pane layoutX="100.0" layoutY="100.0" prefHeight="450.0" prefWidth="700.0">
          <styleClass>
             <String fx:value="white" />
             <String fx:value="round" />
          </styleClass>
          <children>
-            <Pane prefHeight="450.0" prefWidth="220.0" stylesheets="@Design.css">
+            <Pane prefHeight="450.0" prefWidth="220.0">
                <styleClass>
                   <String fx:value="white" />
                   <String fx:value="round" />
@@ -32,8 +32,8 @@
                </children>
             </Pane>
 
-            <TextField fx:id="LoginId" layoutX="341.0" layoutY="184.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter ID" />
-            <Button fx:id="LoginBtn" layoutX="366.0" layoutY="297.0" mnemonicParsing="false" onAction="#changeToMain" prefHeight="35.0" prefWidth="200.0" stylesheets="@Design.css" text="Login">
+            <TextField fx:id="loginId" layoutX="341.0" layoutY="184.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter ID" />
+            <Button fx:id="loginBtn" layoutX="366.0" layoutY="297.0" mnemonicParsing="false" onAction="#changeToMain" prefHeight="35.0" prefWidth="200.0" text="Login">
 
                <styleClass>
                   <String fx:value="firstColor" />
@@ -45,12 +45,12 @@
                   <Font name="HYGothic-Extra" size="24.0" />
                </font>
             </Label>
-            <PasswordField fx:id="LoginPw" layoutX="341.0" layoutY="232.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter PW" />
+            <PasswordField fx:id="loginPw" layoutX="341.0" layoutY="232.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter PW" />
          </children>
       </Pane>
       <Label layoutX="534.0" layoutY="566.0" text="Don't hava an account?" textFill="#666666d6" />
 
-      <Label fx:id="SingUpLabel" layoutX="680.0" layoutY="566.0" onMouseClicked="#changeScene" text="Create Account" textFill="#916cbc" />
+      <Label fx:id="signUpLabel" layoutX="680.0" layoutY="566.0" onMouseClicked="#changeToSignUp" text="Create Account" textFill="#916cbc" />
 
    </children>
 </AnchorPane>

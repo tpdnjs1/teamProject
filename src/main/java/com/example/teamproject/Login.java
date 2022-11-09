@@ -85,9 +85,9 @@ public class Login implements Initializable {
     }
 
     // sigh-up 화면으로 이동하는 라벨
+
     public void changeToSignUp(){
         movePage.changeSceneLabel("SignUp", signUpLabel);
     }
-
 
 }

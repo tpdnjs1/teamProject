@@ -51,7 +51,11 @@
       <Label layoutX="534.0" layoutY="566.0" text="Don't hava an account?" textFill="#666666d6" />
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <Label fx:id="SignUpLabel" layoutX="680.0" layoutY="566.0" onMouseClicked="#changeSceneToSignUp" text="Create Account" textFill="#916cbc" />
+=======
+      <Label fx:id="signUpLabel" layoutX="680.0" layoutY="566.0" onMouseClicked="#changeToSignUp" text="Create Account" textFill="#916cbc" />
+>>>>>>> Stashed changes
 =======
       <Label fx:id="signUpLabel" layoutX="680.0" layoutY="566.0" onMouseClicked="#changeToSignUp" text="Create Account" textFill="#916cbc" />
 >>>>>>> Stashed changes

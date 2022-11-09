@@ -100,6 +100,7 @@ public class Login implements Initializable {
     // sigh-up 화면으로 이동하는 라벨
     @FXML
     private Label SingUpBtn;
+
     public void changeScene2() {
         try {
             Parent nextScene

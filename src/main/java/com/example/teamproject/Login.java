@@ -99,13 +99,13 @@ public class Login implements Initializable {
 
     // sigh-up 화면으로 이동하는 라벨
     @FXML
-    private Label SingUpBtn;
-    public void changeScene2() {
+    private Label SingUpLabel;
+    public void changeScene() {
         try {
             Parent nextScene
                     = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
             Scene scene = new Scene(nextScene);
-            Stage primaryStage = (Stage) SingUpBtn.getScene().getWindow();
+            Stage primaryStage = (Stage) SingUpLabel.getScene().getWindow();
             primaryStage.setScene(scene);
 
         } catch (Exception e) {

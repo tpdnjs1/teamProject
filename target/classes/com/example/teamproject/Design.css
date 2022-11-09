@@ -3,6 +3,35 @@
     -fx-border-color: rgba(0, 0, 0, 0);
 }
 
+.BtnSecond {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-color: rgba(0, 0, 0, 0);
+}
+
+.BtnThird {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-color: rgba(0, 0, 0, 0);
+}
+
+
+.Btn:hover {
+    -fx-background-image: url(images/calendar_hover.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.BtnSecond:hover {
+    -fx-background-image: url(images/question_hover.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.BtnThird:hover {
+    -fx-background-image: url(images/setting_hover.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+
 .BtnRound {
     -fx-background-radius: 8px;
 }

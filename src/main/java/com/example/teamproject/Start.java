@@ -11,6 +11,6 @@ public class Start {
 
     @FXML
     private void nextPage(){
-        movePage.changeScene("Login", btn);
+        movePage.changeScene("SplashScreen", btn);
     }
 }

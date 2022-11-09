@@ -43,13 +43,13 @@ public class SplashScreen implements Initializable {
     private AnchorPane container;
 
     @FXML
-    private Button NextBtn;
+    private Button nextBtn;
 
     @FXML
-    private void open_registration_from(MouseEvent event) throws IOException {
+    private void animationNextPage(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("SplashScreen2.fxml"));
 
-        Scene scene = NextBtn.getScene();
+        Scene scene = nextBtn.getScene();
 
         root.translateXProperty().set(scene.getWidth());
 

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen2">
+<AnchorPane fx:id="container" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen2">
    <children>
       <Pane layoutX="100.0" layoutY="150.0" prefHeight="350.0" prefWidth="350.0" styleClass="Diary" stylesheets="@Design.css" />
       <Label layoutX="641.0" layoutY="150.0" text="Diary">
@@ -15,7 +15,7 @@
             <Font name="HYGothic-Extra" size="28.0" />
          </font>
       </Label>
-      <Button fx:id="Next2Btn" layoutX="596.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#open_registration_from" prefHeight="30.0" prefWidth="170.0" stylesheets="@Design.css" text="NEXT">
+      <Button fx:id="nextBtn" layoutX="596.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#animationNextPage" prefHeight="30.0" prefWidth="170.0" stylesheets="@Design.css" text="NEXT">
          <styleClass>
             <String fx:value="shadow" />
             <String fx:value="firstColor" />

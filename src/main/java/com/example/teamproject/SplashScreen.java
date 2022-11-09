@@ -28,6 +28,17 @@ public class SplashScreen implements Initializable {
 
     }
 
+    MovePage movePage = new MovePage();
+
+    @FXML
+    private Label skip;
+
+    @FXML
+    private void skipPage(){
+        movePage.changeSceneLabel("Login", skip);
+    }
+
+
     @FXML
     private AnchorPane container;
 
@@ -42,7 +53,7 @@ public class SplashScreen implements Initializable {
 
         root.translateXProperty().set(scene.getWidth());
 
-        StackPane parentContainer = (StackPane) scene.getRoot();
+        AnchorPane parentContainer = (AnchorPane) scene.getRoot();
         parentContainer.getChildren().add(root);
 
         Timeline timeline = new Timeline();

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen">
    <children>
       <Pane layoutX="100.0" layoutY="150.0" prefHeight="350.0" prefWidth="350.0" styleClass="SPCalendar" stylesheets="@Design.css" />
       <Label layoutX="528.0" layoutY="150.0" text="Account Book Calendar">
@@ -15,7 +15,7 @@
             <Font name="HYGothic-Extra" size="28.0" />
          </font>
       </Label>
-      <Button fx:id="NextBtn" layoutX="596.0" layoutY="501.0" mnemonicParsing="false" onAction="#open_registration_from" prefHeight="30.0" prefWidth="170.0" stylesheets="@Design.css" text="NEXT">
+      <Button fx:id="NextBtn" layoutX="596.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#open_registration_from" prefHeight="30.0" prefWidth="170.0" stylesheets="@Design.css" text="NEXT">
          <styleClass>
             <String fx:value="shadow" />
             <String fx:value="firstColor" />
@@ -30,7 +30,7 @@
       <Pane layoutX="654.0" layoutY="469.0" prefHeight="10.0" prefWidth="10.0" styleClass="Circle" stylesheets="@Design.css" />
       <Pane layoutX="676.0" layoutY="469.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
       <Pane layoutX="697.0" layoutY="469.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
-      <Label layoutX="855.0" layoutY="14.0" text="Skip" textFill="#8a8a8a">
+      <Label fx:id="skip" layoutX="855.0" layoutY="14.0" onMouseClicked="#skipPage" text="Skip" textFill="#8a8a8a">
          <font>
             <Font name="Corbel" size="16.0" />
          </font>

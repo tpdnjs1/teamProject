@@ -36,7 +36,7 @@ public class Login implements Initializable {
         String getID = loginId.getText();
         String getPW = Login.this.loginPw.getText();
         DBUtil db = new DBUtil();
-        Connection con = db.getConnection();
+        Connection conn = db.getConnection();
 
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -44,7 +44,7 @@ public class Login implements Initializable {
         String sql = "select * from Users WHERE id = '" + getID + "'";
 
         try {
-            pstmt = con.prepareStatement(sql);
+            pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
 
             while(rs.next()) {

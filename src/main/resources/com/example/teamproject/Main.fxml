@@ -9,28 +9,28 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Main">
    <children>
-      <Button layoutX="26.0" layoutY="257.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" stylesheets="@Design.css">
+      <Button layoutX="26.0" layoutY="257.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0">
          <styleClass>
             <String fx:value="Btn" />
             <String fx:value="Calendar" />
          </styleClass>
       </Button>
-      <Button layoutX="26.0" layoutY="359.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" stylesheets="@Design.css">
+      <Button layoutX="26.0" layoutY="359.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0">
          <styleClass>
             <String fx:value="Btn" />
             <String fx:value="Questions" />
          </styleClass>
       </Button>
-      <Button layoutX="28.0" layoutY="600.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" stylesheets="@Design.css">
+      <Button layoutX="28.0" layoutY="600.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
          <styleClass>
             <String fx:value="Btn" />
             <String fx:value="Setting" />
          </styleClass>
       </Button>
-      <Pane layoutX="14.0" layoutY="14.0" prefHeight="65.0" prefWidth="65.0" styleClass="LogoImage" stylesheets="@Design.css" />
-      <Pane layoutX="87.0" prefHeight="650.0" prefWidth="815.0" styleClass="BackgroundColor" stylesheets="@Design.css">
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="65.0" prefWidth="65.0" styleClass="LogoImage" />
+      <Pane layoutX="87.0" prefHeight="650.0" prefWidth="815.0" styleClass="BackgroundColor">
          <children>
-            <Pane layoutX="14.0" layoutY="20.0" prefHeight="610.0" prefWidth="550.0" stylesheets="@Design.css">
+            <Pane layoutX="14.0" layoutY="20.0" prefHeight="610.0" prefWidth="550.0">
                <styleClass>
                   <String fx:value="shadowPane" />
                   <String fx:value="white" />
@@ -44,7 +44,7 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="581.0" layoutY="20.0" prefHeight="93.0" prefWidth="220.0" stylesheets="@Design.css">
+            <Pane layoutX="581.0" layoutY="20.0" prefHeight="93.0" prefWidth="220.0">
                <styleClass>
                   <String fx:value="white" />
                   <String fx:value="shadowPane" />
@@ -63,7 +63,7 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="581.0" layoutY="127.0" prefHeight="503.0" prefWidth="220.0" stylesheets="@Design.css">
+            <Pane layoutX="581.0" layoutY="127.0" prefHeight="503.0" prefWidth="220.0">
                <styleClass>
                   <String fx:value="white" />
                   <String fx:value="shadowPane" />
@@ -75,7 +75,7 @@
                         <Font name="Franklin Gothic Medium" size="20.0" />
                      </font>
                   </Label>
-                  <Button fx:id="add" layoutX="166.0" layoutY="46.0" mnemonicParsing="false" onAction="#popUpPage" stylesheets="@Design.css" text="Add">
+                  <Button fx:id="add" layoutX="166.0" layoutY="46.0" mnemonicParsing="false" onAction="#popUpPage" text="Add">
                      <styleClass>
                         <String fx:value="fourthColor" />
                         <String fx:value="BtnRound" />

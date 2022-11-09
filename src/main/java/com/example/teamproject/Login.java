@@ -64,7 +64,7 @@ public class Login implements Initializable {
             if(getPW.equals(pw)) {
                 try {
                     //화면 넘김
-                    Parent login = FXMLLoader.load(getClass().getResource("SceneShift.fxml"));
+                    Parent login = FXMLLoader.load(getClass().getResource("Main.fxml"));
                     Scene scene = new Scene(login);
                     Stage primaryStage = (Stage) LoginBtn.getScene().getWindow();
                     primaryStage.setScene(scene);

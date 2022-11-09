@@ -19,23 +19,8 @@ public class Main {
     @FXML
     private Button add;
 
+    @FXML
     private void popUpPage(){
-        Stage mainStage = (Stage) add.getScene().getWindow();
-        Stage pop = new Stage(StageStyle.DECORATED);
-        pop.initModality(Modality.WINDOW_MODAL);
-        pop.initOwner(mainStage);
-        try {
-            Parent nextScene = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("DiaryAdd.fxml")));
-            Scene scene = new Scene(nextScene);
-
-            pop.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("images/Crescent.png"))));
-            pop.setTitle("Crescent Account Book");
-
-            pop.setScene(scene);
-            pop.setResizable(false);
-            pop.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        movePage.popUp("DiaryAdd", add);
     }
 }

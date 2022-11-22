@@ -74,7 +74,7 @@
 }
 
 .white {
-    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-background-color: rgba(255, 255, 255, 0.7);
 }
 
 .black {
@@ -128,6 +128,25 @@
     -fx-background-size: cover;
     -fx-background-position: center;
 }
+
+.Won {
+    -fx-background-image: url(images/Won.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.User {
+    -fx-background-image: url(images/User.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.Lock {
+    -fx-background-image: url(images/Lock.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
 
 
 

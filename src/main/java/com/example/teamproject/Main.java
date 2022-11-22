@@ -34,6 +34,6 @@ public class Main {
     @FXML
     private void moveQuestion(){movePage.changeScene("Questions", question);}
     @FXML
-    private void moveSetting(){}
+    private void moveSetting(){movePage.changeScene("Setting", setting);}
 
 }

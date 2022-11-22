@@ -42,11 +42,7 @@
                         <Font name="Hancom Gothic Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Pane layoutX="60.0" layoutY="35.0" prefHeight="125.0" prefWidth="125.0" stylesheets="@Design.css">
-                     <styleClass>
-                        <String fx:value="Lock" />
-                        <String fx:value="shadow" />
-                     </styleClass></Pane>
+                  <Pane layoutX="60.0" layoutY="35.0" prefHeight="125.0" prefWidth="125.0" styleClass="Lock" stylesheets="@Design.css" />
                   <Label layoutX="83.0" layoutY="197.0" styleClass="shadow" text="correction">
                      <font>
                         <Font name="Corbel Bold" size="18.0" />
@@ -61,11 +57,7 @@
             </Pane>
             <Pane layoutX="285.0" layoutY="186.0" prefHeight="320.0" prefWidth="245.0" stylesheets="@Design.css">
                <children>
-                  <Pane layoutX="60.0" layoutY="35.0" prefHeight="125.0" prefWidth="125.0" stylesheets="@Design.css">
-                     <styleClass>
-                        <String fx:value="User" />
-                        <String fx:value="shadow" />
-                     </styleClass></Pane>
+                  <Pane layoutX="60.0" layoutY="35.0" prefHeight="125.0" prefWidth="125.0" styleClass="User" stylesheets="@Design.css" />
                   <Label layoutX="105.0" layoutY="231.0" styleClass="shadow" text="이름">
                      <font>
                         <Font name="Hancom Gothic Regular" size="18.0" />
@@ -95,11 +87,7 @@
                         <Font name="Hancom Gothic Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Pane layoutX="59.0" layoutY="37.0" prefHeight="125.0" prefWidth="125.0" stylesheets="@Design.css">
-                     <styleClass>
-                        <String fx:value="Won" />
-                        <String fx:value="shadow" />
-                     </styleClass></Pane>
+                  <Pane layoutX="59.0" layoutY="37.0" prefHeight="125.0" prefWidth="125.0" styleClass="Won" stylesheets="@Design.css" />
                </children>
                <styleClass>
                   <String fx:value="white" />

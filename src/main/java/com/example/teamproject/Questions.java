@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 public class Questions {
+
     MovePage movePage = new MovePage();
 
     @FXML
@@ -19,4 +20,5 @@ public class Questions {
     private void moveQuestion(){movePage.changeScene("Questions", question);}
     @FXML
     private void moveSetting(){}
+
 }

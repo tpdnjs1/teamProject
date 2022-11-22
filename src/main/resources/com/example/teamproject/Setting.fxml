@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Setting">
    <children>
-      <Button layoutX="26.0" layoutY="257.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0">
+      <Button fx:id="main" layoutX="26.0" layoutY="257.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0">
          <styleClass>
             <String fx:value="Btn" />
             <String fx:value="Calendar" />

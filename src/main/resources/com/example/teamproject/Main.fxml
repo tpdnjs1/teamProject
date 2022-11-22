@@ -38,7 +38,57 @@
                   <String fx:value="white" />
                   <String fx:value="round" />
                </styleClass>
-               
+               <children>
+                  <Label layoutX="202.0" layoutY="25.0" text="Label">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="61.0" layoutY="30.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="403.0" layoutY="42.0" mnemonicParsing="false" text="Button" />
+                  <Label layoutX="38.0" layoutY="107.0" text="Label" />
+                  <Label layoutX="115.0" layoutY="107.0" text="Label" />
+                  <Label layoutX="180.0" layoutY="107.0" text="Label" />
+                  <Label layoutX="260.0" layoutY="107.0" text="Label" />
+                  <Label layoutX="331.0" layoutY="107.0" text="Label" />
+                  <Label layoutX="403.0" layoutY="107.0" text="Label" />
+                  <Label layoutX="483.0" layoutY="107.0" text="Label" />
+                  <ToggleButton layoutX="41.0" layoutY="165.0" mnemonicParsing="false" text="B1" />
+                  <ToggleButton layoutX="99.0" layoutY="165.0" mnemonicParsing="false" text="B2" />
+                  <ToggleButton layoutX="164.0" layoutY="165.0" mnemonicParsing="false" text="B3" />
+                  <ToggleButton layoutX="226.0" layoutY="165.0" mnemonicParsing="false" text="B4" />
+                  <ToggleButton layoutX="294.0" layoutY="165.0" mnemonicParsing="false" text="B5" />
+                  <ToggleButton layoutX="362.0" layoutY="165.0" mnemonicParsing="false" text="B6" />
+                  <ToggleButton layoutX="434.0" layoutY="165.0" mnemonicParsing="false" text="B7" />
+                  <ToggleButton layoutX="36.0" layoutY="201.0" mnemonicParsing="false" text="B8" />
+                  <ToggleButton layoutX="94.0" layoutY="201.0" mnemonicParsing="false" text="B9" />
+                  <ToggleButton layoutX="159.0" layoutY="201.0" mnemonicParsing="false" text="B10" />
+                  <ToggleButton layoutX="221.0" layoutY="201.0" mnemonicParsing="false" text="B11" />
+                  <ToggleButton layoutX="289.0" layoutY="201.0" mnemonicParsing="false" text="B12" />
+                  <ToggleButton layoutX="357.0" layoutY="201.0" mnemonicParsing="false" text="B13" />
+                  <ToggleButton layoutX="429.0" layoutY="201.0" mnemonicParsing="false" text="B14" />
+                  <ToggleButton layoutX="36.0" layoutY="240.0" mnemonicParsing="false" text="B15" />
+                  <ToggleButton layoutX="94.0" layoutY="240.0" mnemonicParsing="false" text="B16" />
+                  <ToggleButton layoutX="159.0" layoutY="240.0" mnemonicParsing="false" text="B17" />
+                  <ToggleButton layoutX="221.0" layoutY="240.0" mnemonicParsing="false" text="B18" />
+                  <ToggleButton layoutX="289.0" layoutY="240.0" mnemonicParsing="false" text="B19" />
+                  <ToggleButton layoutX="357.0" layoutY="240.0" mnemonicParsing="false" text="B20" />
+                  <ToggleButton layoutX="429.0" layoutY="240.0" mnemonicParsing="false" text="B21" />
+                  <ToggleButton layoutX="36.0" layoutY="294.0" mnemonicParsing="false" text="B22" />
+                  <ToggleButton layoutX="94.0" layoutY="294.0" mnemonicParsing="false" text="B23" />
+                  <ToggleButton layoutX="159.0" layoutY="294.0" mnemonicParsing="false" text="B24" />
+                  <ToggleButton layoutX="221.0" layoutY="294.0" mnemonicParsing="false" text="B25" />
+                  <ToggleButton layoutX="289.0" layoutY="294.0" mnemonicParsing="false" text="B26" />
+                  <ToggleButton layoutX="357.0" layoutY="294.0" mnemonicParsing="false" text="B27" />
+                  <ToggleButton layoutX="429.0" layoutY="294.0" mnemonicParsing="false" text="B28" />
+                  <ToggleButton layoutX="48.0" layoutY="330.0" mnemonicParsing="false" text="B29" />
+                  <ToggleButton layoutX="106.0" layoutY="330.0" mnemonicParsing="false" text="B30" />
+                  <ToggleButton layoutX="171.0" layoutY="330.0" mnemonicParsing="false" text="B31" />
+                  <ToggleButton layoutX="233.0" layoutY="330.0" mnemonicParsing="false" text="B32" />
+                  <ToggleButton layoutX="301.0" layoutY="330.0" mnemonicParsing="false" text="B33" />
+                  <ToggleButton layoutX="369.0" layoutY="330.0" mnemonicParsing="false" text="B34" />
+                  <ToggleButton layoutX="441.0" layoutY="330.0" mnemonicParsing="false" text="B35" />
+               </children>
             </Pane>
             <Pane layoutX="581.0" layoutY="20.0" prefHeight="93.0" prefWidth="220.0">
                <styleClass>

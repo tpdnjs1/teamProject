@@ -32,7 +32,7 @@
          <children>
             <Label layoutX="39.0" layoutY="59.0" text="Setting">
                <font>
-                  <Font name="Corbel Light Italic" size="48.0" />
+                  <Font name="Malgun Gothic Semilight" size="48.0" />
                </font>
             </Label>
             <Pane layoutX="545.0" layoutY="186.0" prefHeight="320.0" prefWidth="245.0" stylesheets="@Design.css">

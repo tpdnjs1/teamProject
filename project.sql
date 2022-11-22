@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 22-11-09 06:39
+-- 생성 시간: 22-11-22 04:25
 -- 서버 버전: 10.4.21-MariaDB
 -- PHP 버전: 7.3.31
 
@@ -20,6 +20,18 @@ SET time_zone = "+00:00";
 --
 -- 데이터베이스: `project`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 테이블 구조 `answers`
+--
+
+CREATE TABLE `answers` (
+  `uid` int(11) NOT NULL,
+  `qNum` int(11) NOT NULL,
+  `answer` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 

@@ -3,6 +3,7 @@
 <?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -168,6 +169,12 @@
                         <String fx:value="shadow" />
                      </styleClass>
                   </Button>
+                  <ListView layoutX="10.0" layoutY="79.0" prefHeight="410.0" prefWidth="200.0" stylesheets="@Design.css">
+                     <styleClass>
+                        <String fx:value="BtnRound" />
+                        <String fx:value="white" />
+                     </styleClass>
+                  </ListView>
                </children>
             </Pane>
          </children></Pane>

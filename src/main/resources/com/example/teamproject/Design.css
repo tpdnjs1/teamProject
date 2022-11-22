@@ -129,6 +129,25 @@
     -fx-background-position: center;
 }
 
+.Won {
+    -fx-background-image: url(images/Won.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.User {
+    -fx-background-image: url(images/User.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.Lock {
+    -fx-background-image: url(images/Lock.png);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+
 
 
 .Calendar {

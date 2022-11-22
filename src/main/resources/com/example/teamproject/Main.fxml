@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -53,25 +54,28 @@
                   <Label layoutX="331.0" layoutY="107.0" text="Label" />
                   <Label layoutX="403.0" layoutY="107.0" text="Label" />
                   <Label layoutX="483.0" layoutY="107.0" text="Label" />
-                  <ToggleButton layoutX="41.0" layoutY="165.0" mnemonicParsing="false" text="B1" />
-                  <ToggleButton layoutX="99.0" layoutY="165.0" mnemonicParsing="false" text="B2" />
-                  <ToggleButton layoutX="164.0" layoutY="165.0" mnemonicParsing="false" text="B3" />
-                  <ToggleButton layoutX="226.0" layoutY="165.0" mnemonicParsing="false" text="B4" />
-                  <ToggleButton layoutX="294.0" layoutY="165.0" mnemonicParsing="false" text="B5" />
-                  <ToggleButton layoutX="362.0" layoutY="165.0" mnemonicParsing="false" text="B6" />
-                  <ToggleButton layoutX="434.0" layoutY="165.0" mnemonicParsing="false" text="B7" />
-                  <ToggleButton layoutX="36.0" layoutY="201.0" mnemonicParsing="false" text="B8" />
-                  <ToggleButton layoutX="94.0" layoutY="201.0" mnemonicParsing="false" text="B9" />
-                  <ToggleButton layoutX="159.0" layoutY="201.0" mnemonicParsing="false" text="B10" />
-                  <ToggleButton layoutX="221.0" layoutY="201.0" mnemonicParsing="false" text="B11" />
-                  <ToggleButton layoutX="289.0" layoutY="201.0" mnemonicParsing="false" text="B12" />
-                  <ToggleButton layoutX="357.0" layoutY="201.0" mnemonicParsing="false" text="B13" />
-                  <ToggleButton layoutX="429.0" layoutY="201.0" mnemonicParsing="false" text="B14" />
-                  <ToggleButton layoutX="36.0" layoutY="240.0" mnemonicParsing="false" text="B15" />
-                  <ToggleButton layoutX="94.0" layoutY="240.0" mnemonicParsing="false" text="B16" />
-                  <ToggleButton layoutX="159.0" layoutY="240.0" mnemonicParsing="false" text="B17" />
-                  <ToggleButton layoutX="221.0" layoutY="240.0" mnemonicParsing="false" text="B18" />
-                  <ToggleButton layoutX="289.0" layoutY="240.0" mnemonicParsing="false" text="B19" />
+                  <ToggleButton fx:id="B1" layoutX="41.0" layoutY="165.0" mnemonicParsing="false" text="B1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="date" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="B2" layoutX="99.0" layoutY="165.0" mnemonicParsing="false" text="B2" toggleGroup="$date" />
+                  <ToggleButton fx:id="B3" layoutX="164.0" layoutY="165.0" mnemonicParsing="false" text="B3" toggleGroup="$date" />
+                  <ToggleButton fx:id="B4" layoutX="226.0" layoutY="165.0" mnemonicParsing="false" text="B4" toggleGroup="$date" />
+                  <ToggleButton fx:id="B5" layoutX="294.0" layoutY="165.0" mnemonicParsing="false" text="B5" toggleGroup="$date" />
+                  <ToggleButton fx:id="B6" layoutX="362.0" layoutY="165.0" mnemonicParsing="false" text="B6" toggleGroup="$date" />
+                  <ToggleButton fx:id="B7" layoutX="434.0" layoutY="165.0" mnemonicParsing="false" text="B7" toggleGroup="$date" />
+                  <ToggleButton fx:id="B8" layoutX="36.0" layoutY="201.0" mnemonicParsing="false" text="B8" toggleGroup="$date" />
+                  <ToggleButton fx:id="B9" layoutX="94.0" layoutY="201.0" mnemonicParsing="false" text="B9" toggleGroup="$date" />
+                  <ToggleButton fx:id="B10" layoutX="159.0" layoutY="201.0" mnemonicParsing="false" text="B10" toggleGroup="$date" />
+                  <ToggleButton fx:id="B11" layoutX="221.0" layoutY="201.0" mnemonicParsing="false" text="B11" toggleGroup="$date" />
+                  <ToggleButton layoutX="289.0" layoutY="201.0" mnemonicParsing="false" text="B12" toggleGroup="$date" />
+                  <ToggleButton layoutX="357.0" layoutY="201.0" mnemonicParsing="false" text="B13" toggleGroup="$date" />
+                  <ToggleButton layoutX="429.0" layoutY="201.0" mnemonicParsing="false" text="B14" toggleGroup="$date" />
+                  <ToggleButton layoutX="36.0" layoutY="240.0" mnemonicParsing="false" text="B15" toggleGroup="$date" />
+                  <ToggleButton layoutX="94.0" layoutY="240.0" mnemonicParsing="false" text="B16" toggleGroup="$date" />
+                  <ToggleButton layoutX="159.0" layoutY="240.0" mnemonicParsing="false" text="B17" toggleGroup="$date" />
+                  <ToggleButton layoutX="221.0" layoutY="240.0" mnemonicParsing="false" text="B18" toggleGroup="$date" />
+                  <ToggleButton layoutX="289.0" layoutY="240.0" mnemonicParsing="false" text="B19" toggleGroup="$date" />
                   <ToggleButton layoutX="357.0" layoutY="240.0" mnemonicParsing="false" text="B20" />
                   <ToggleButton layoutX="429.0" layoutY="240.0" mnemonicParsing="false" text="B21" />
                   <ToggleButton layoutX="36.0" layoutY="294.0" mnemonicParsing="false" text="B22" />

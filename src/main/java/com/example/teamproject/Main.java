@@ -19,6 +19,8 @@ public class Main {
     @FXML
     private Button add;
     @FXML
+    private Button main;
+    @FXML
     private Button question;
     @FXML
     private Button setting;
@@ -28,6 +30,10 @@ public class Main {
         movePage.popUp("DiaryAdd", add);
     }
     @FXML
+    private void moveMain(){movePage.changeScene("Main", main);}
+    @FXML
     private void moveQuestion(){movePage.changeScene("Questions", question);}
+    @FXML
+    private void moveSetting(){}
 
 }

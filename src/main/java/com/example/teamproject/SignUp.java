@@ -44,7 +44,6 @@ public class SignUp {
             //알트 확인 버튼 클릭되면 화면 전환 시키고싶음.
 
         } catch (Exception e) {
-            e.printStackTrace();
             alert("회원가입이 제대로 완료되지 않았습니다.", null);
 
         }

@@ -56,7 +56,7 @@ public class Login implements Initializable {
 
             }
         }catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(" ");
         }
 
         //id, pw TextField 입력 확인

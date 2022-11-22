@@ -3,6 +3,8 @@ name - Cresent account book (CAB)
 * 자료 모음 * 
 https://developers.kakao.com/product/kakaoPay
 - 토스 페이 자료 추가 - 
+https://www.youtube.com/watch?v=zJZ-ogqin2o
+-12시에 질문 오게 하는 코드-
 
 / 기능 / 
 
@@ -17,3 +19,4 @@ https://developers.kakao.com/product/kakaoPay
 
 - 캘린더에 그날 일기 기록
   : 하루 있었던 일이나 감정 표현 일기로 사용 가능
+

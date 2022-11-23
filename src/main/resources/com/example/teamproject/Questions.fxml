@@ -60,33 +60,36 @@
                   </Button>
                </children>
             </Pane>
-            <Label layoutX="46.0" layoutY="63.0" text="Q . ">
+            <Label layoutX="46.0" layoutY="72.0" text="Q . ">
                <font>
-                  <Font name="Microsoft YaHei" size="48.0" />
+                  <Font name="Corbel" size="48.0" />
                </font>
             </Label>
-            <HBox layoutX="94.0" layoutY="29.0" prefHeight="34.0" prefWidth="97.0">
+            <HBox layoutX="112.0" layoutY="43.0" prefHeight="20.0" prefWidth="97.0">
                <children>
                   <Label fx:id="chanNum" text="1">
                      <font>
-                        <Font name="Myanmar Text" size="14.0" />
+                        <Font name="Corbel" size="16.0" />
                      </font>
                   </Label>
                   <Label layoutX="10.0" text="th">
                      <font>
-                        <Font name="Myanmar Text" size="14.0" />
+                        <Font name="Corbel" size="16.0" />
                      </font></Label>
                   <Label text="  Questions">
                      <font>
-                        <Font name="Myanmar Text" size="14.0" />
+                        <Font name="Corbel" size="16.0" />
                      </font>
                   </Label>
                </children>
             </HBox>
-            <Label fx:id="qChange" layoutX="125.0" layoutY="88.0" text="질문 내용" />
-            <Label layoutX="534.0" layoutY="171.0" text="A">
+            <Label fx:id="qChange" layoutX="113.0" layoutY="90.0" text="질문 내용">
                <font>
-                  <Font name="Microsoft YaHei UI" size="48.0" />
+                  <Font name="HYSinMyeongJo-Medium" size="22.0" />
+               </font></Label>
+            <Label layoutX="529.0" layoutY="171.0" text="A">
+               <font>
+                  <Font name="Corbel" size="48.0" />
                </font>
             </Label>
             <TextArea layoutX="46.0" layoutY="239.0" prefHeight="335.0" prefWidth="522.0" promptText="please answer the question" styleClass="shadow" stylesheets="@Design.css">
@@ -96,7 +99,7 @@
             </TextArea>
             <Button layoutX="219.0" layoutY="590.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="177.0" text="Push">
                <styleClass>
-                  <String fx:value="thirdColor" />
+                  <String fx:value="fourthColor" />
                   <String fx:value="shadow" />
                   <String fx:value="BtnRound" />
                </styleClass>

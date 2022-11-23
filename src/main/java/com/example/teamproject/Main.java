@@ -59,37 +59,37 @@ public class Main implements Initializable {
     @FXML
     private ToggleGroup date = new ToggleGroup();
 
-    LocalDate now = LocalDate.now();
+
     int year;
     int month;
     int day;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        LocalDate now = LocalDate.now();
         year = now.getYear();
         month = now.getMonthValue();
         day = now.getDayOfMonth();
         setCalendar();
-
     }
 
-    private int bNum1 =1;
-    private int bNum2 =2;
-    private int bNum3 =3;
-    private int bNum4 =4;
-    private int bNum5 =5;
-    private int bNum6 =6;
-    private int bNum7 =7;
-    private int bNum8 =8;
-    private int bNum9 =9;
-    private int bNum10 =10;
-    private int bNum11 =11;
-    private int bNum12 =12;
-    private int bNum13 =13;
-    private int bNum14 =14;
-    private int bNum15 =15;
-    private int bNum16 =16;
-    private int bNum17 =17;
+    private final int bNum1 =1;
+    private final int bNum2 =2;
+    private final int bNum3 =3;
+    private final int bNum4 =4;
+    private final int bNum5 =5;
+    private final int bNum6 =6;
+    private final int bNum7 =7;
+    private final int bNum8 =8;
+    private final int bNum9 =9;
+    private final int bNum10 =10;
+    private final int bNum11 =11;
+    private final int bNum12 =12;
+    private final int bNum13 =13;
+    private final int bNum14 =14;
+    private final int bNum15 =15;
+    private final int bNum16 =16;
+    private final int bNum17 =17;
     private final int bNum18 =18;
     private final int bNum19 =19;
     private final int bNum20 =20;

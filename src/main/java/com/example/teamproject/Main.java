@@ -181,19 +181,39 @@ public class Main implements Initializable {
 
     private void setCalendar(){
         prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
-        prn(year, month, B1, bNum1);
+        prn(year, month, B2, bNum2);
+        prn(year, month, B3, bNum3);
+        prn(year, month, B4, bNum4);
+        prn(year, month, B5, bNum5);
+        prn(year, month, B6, bNum6);
+        prn(year, month, B7, bNum7);
+        prn(year, month, B8, bNum8);
+        prn(year, month, B9, bNum9);
+        prn(year, month, B10, bNum10);
+        prn(year, month, B11, bNum11);
+        prn(year, month, B12, bNum12);
+        prn(year, month, B13, bNum13);
+        prn(year, month, B14, bNum14);
+        prn(year, month, B15, bNum15);
+        prn(year, month, B16, bNum16);
+        prn(year, month, B17, bNum17);
+        prn(year, month, B18, bNum18);
+        prn(year, month, B19, bNum19);
+        prn(year, month, B20, bNum20);
+        prn(year, month, B21, bNum21);
+        prn(year, month, B22, bNum22);
+        prn(year, month, B23, bNum23);
+        prn(year, month, B24, bNum24);
+        prn(year, month, B25, bNum25);
+        prn(year, month, B26, bNum26);
+        prn(year, month, B27, bNum27);
+        prn(year, month, B28, bNum28);
+        prn(year, month, B29, bNum29);
+        prn(year, month, B30, bNum30);
+        prn(year, month, B31, bNum31);
+        prn(year, month, B32, bNum32);
+        prn(year, month, B33, bNum33);
+        prn(year, month, B34, bNum34);
+        prn(year, month, B35, bNum35);
     }
 }

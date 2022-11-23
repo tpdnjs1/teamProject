@@ -16,7 +16,6 @@ public class Login implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
 
     @FXML
@@ -32,10 +31,18 @@ public class Login implements Initializable {
     private Label NextScreen;
 
     @FXML
+    private void onMouse(){
+        signUpLabel.setUnderline(true);
+    }
+    @FXML
+    private void offMouse(){
+        signUpLabel.setUnderline(false);
+    }
+
+    @FXML
     private void NextLabel() {
         movePage.changeSceneLabel("Main", NextScreen);
     }
-
 
     String id;
     String pw;

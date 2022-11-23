@@ -1,33 +1,22 @@
 package com.example.teamproject;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
-import javafx.scene.image.Image;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
-import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class Main implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        date = new ToggleGroup();
-        LocalDate now = LocalDate.now();
 
     }
-
 
     MovePage movePage = new MovePage();
     @FXML
@@ -60,8 +49,21 @@ public class Main implements Initializable {
         movePage.changeScene("Setting", setting);
     }
 
+    LocalDate now = LocalDate.now();
+    int iYear = now.getYear();
+    int iMonth = now.getMonthValue();
+    int iDay = now.getDayOfMonth();
+
     @FXML
-    private ToggleGroup date;
+    private Label year;
+    @FXML
+    private Label month;
+    @FXML
+    private Button lastMonth;
+    @FXML
+    private Button nextMonth;
+    @FXML
+    private ToggleGroup date = new ToggleGroup();
     @FXML
     private ToggleButton B1;
     @FXML
@@ -133,5 +135,15 @@ public class Main implements Initializable {
     @FXML
     private ToggleButton B35;
 
+    private static int getDate(int month) {
+        int tmp = switch (month) {
+            case 1, 3, 5, 7, 8, 10, 12 -> 31;
+            case 4, 6, 9, 11 -> 30;
+            case 2 -> 29;
+            default -> 0;
+        };
+
+        return tmp;
+    }
 
 }

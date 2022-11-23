@@ -50,8 +50,8 @@
                         <Font name="Courier New" size="48.0" />
                      </font>
                   </Label>
-                  <Button fx:id="lastMonthBtn" layoutX="79.0" layoutY="59.0" mnemonicParsing="false" text="&lt;" />
-                  <Button fx:id="nextMonthBtn" layoutX="450.0" layoutY="60.0" mnemonicParsing="false" text="&gt;" />
+                  <Button fx:id="lastMonthBtn" layoutX="79.0" layoutY="59.0" mnemonicParsing="false" onAction="#lastMonth" text="&lt;" />
+                  <Button fx:id="nextMonthBtn" layoutX="450.0" layoutY="60.0" mnemonicParsing="false" onAction="#nextMonth" text="&gt;" />
                   <Label layoutX="39.0" layoutY="125.0" text="Sun">
                      <font>
                         <Font name="Corbel" size="16.0" />
@@ -146,9 +146,9 @@
                   <String fx:value="round" />
                </styleClass>
                <children>
-                  <Label layoutX="88.0" layoutY="12.0" text="Diary">
+                  <Label layoutX="87.0" layoutY="14.0" text="Diary">
                      <font>
-                        <Font name="Franklin Gothic Medium" size="20.0" />
+                        <Font name="Calibri" size="22.0" />
                      </font>
                   </Label>
                   <Button fx:id="add" layoutX="166.0" layoutY="46.0" mnemonicParsing="false" onAction="#popUpPage" text="Add">

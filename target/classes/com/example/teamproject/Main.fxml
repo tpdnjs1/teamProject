@@ -40,25 +40,46 @@
                   <String fx:value="round" />
                </styleClass>
                <children>
-                  <Label fx:id="yearLabel" layoutX="231.0" layoutY="14.0" text="2021">
+                  <Label fx:id="yearLabel" layoutX="249.0" layoutY="14.0" text="2021">
                      <font>
-                        <Font size="24.0" />
+                        <Font name="Courier New Italic" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="monthLabel" layoutX="242.0" layoutY="42.0" text="1">
+                  <Label fx:id="monthLabel" layoutX="264.0" layoutY="42.0" text="1">
                      <font>
-                        <Font size="48.0" />
+                        <Font name="Courier New" size="48.0" />
                      </font>
                   </Label>
-                  <Button fx:id="lastMonthBtn" layoutX="59.0" layoutY="59.0" mnemonicParsing="false" onAction="#lastMonth" text="&lt;" />
-                  <Button fx:id="nextMonthBtn" layoutX="401.0" layoutY="59.0" mnemonicParsing="false" onAction="#nextMonth" text="&gt;" />
-                  <Label layoutX="35.0" layoutY="124.0" text="일요일" />
-                  <Label layoutX="110.0" layoutY="124.0" text="월요일" />
-                  <Label layoutX="185.0" layoutY="124.0" text="화요일" />
-                  <Label layoutX="260.0" layoutY="124.0" text="수요일" />
-                  <Label layoutX="335.0" layoutY="124.0" text="목요일" />
-                  <Label layoutX="410.0" layoutY="124.0" text="금요일" />
-                  <Label layoutX="485.0" layoutY="124.0" text="토요일" />
+                  <Button fx:id="lastMonthBtn" layoutX="79.0" layoutY="59.0" mnemonicParsing="false" text="&lt;" />
+                  <Button fx:id="nextMonthBtn" layoutX="450.0" layoutY="60.0" mnemonicParsing="false" text="&gt;" />
+                  <Label layoutX="39.0" layoutY="125.0" text="Sun">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="112.0" layoutY="125.0" text="Mon">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="189.0" layoutY="125.0" text="Tus">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="263.0" layoutY="125.0" text="Wed">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="339.0" layoutY="125.0" text="Thu">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="417.0" layoutY="125.0" text="Fri">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="491.0" layoutY="125.0" text="Sat">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font></Label>
                   <ToggleButton fx:id="B1" layoutX="38.0" layoutY="180.0" mnemonicParsing="false" text="B1">
                      <toggleGroup>
                         <ToggleGroup fx:id="date" />
@@ -70,7 +91,7 @@
                   <ToggleButton fx:id="B6" layoutX="412.0" layoutY="180.0" mnemonicParsing="false" text="B6" toggleGroup="$date" />
                   <ToggleButton fx:id="B7" layoutX="488.0" layoutY="180.0" mnemonicParsing="false" text="B7" toggleGroup="$date" />
                   <ToggleButton fx:id="B8" layoutX="38.0" layoutY="255.0" mnemonicParsing="false" text="B8" toggleGroup="$date" />
-                  <ToggleButton fx:id="B9" layoutX="117.0" layoutY="255.0" mnemonicParsing="false" text="B9" toggleGroup="$date" />
+                  <ToggleButton fx:id="B9" layoutX="113.0" layoutY="255.0" mnemonicParsing="false" text="B9" toggleGroup="$date" />
                   <ToggleButton fx:id="B10" layoutX="188.0" layoutY="255.0" mnemonicParsing="false" text="B10" toggleGroup="$date" />
                   <ToggleButton fx:id="B11" layoutX="263.0" layoutY="255.0" mnemonicParsing="false" text="B11" toggleGroup="$date" />
                   <ToggleButton fx:id="B12" layoutX="338.0" layoutY="255.0" mnemonicParsing="false" text="B12" toggleGroup="$date" />

@@ -49,7 +49,7 @@
          </children>
       </Pane>
       <Label layoutX="534.0" layoutY="566.0" text="Don't hava an account?" textFill="#666666d6" />
-      <Label fx:id="signUpLabel" layoutX="680.0" layoutY="566.0" onMouseClicked="#changeToSignUp" text="Create Account" textFill="#916cbc" />
+      <Label fx:id="signUpLabel" layoutX="680.0" layoutY="566.0" onMouseClicked="#changeToSignUp" onMouseEntered="#onMouse" onMouseExited="#offMouse" text="Create Account" textFill="#916cbc" />
       <Label fx:id="NextScreen" layoutX="435.0" layoutY="42.0" onMouseClicked="#NextLabel" text="Skip _편의상" />
    </children>
 </AnchorPane>

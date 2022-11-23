@@ -34,6 +34,14 @@ public class SplashScreen implements Initializable {
     private Label skip;
 
     @FXML
+    private void onMouse(){
+        skip.setUnderline(true);
+    }
+    @FXML
+    private void offMouse(){
+        skip.setUnderline(false);
+    }
+    @FXML
     private void skipPage(){
         movePage.changeSceneLabel("Login", skip);
     }

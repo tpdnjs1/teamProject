@@ -71,7 +71,29 @@ public class Main implements Initializable {
         month = now.getMonthValue();
         day = now.getDayOfMonth();
         setCalendar();
+
     }
+
+    @FXML
+    private void lastMonth(){
+        month--;
+        if (month < 1){
+            year--;
+            month = 12;
+        }
+        setCalendar();
+    }
+    @FXML
+    private void nextMonth(){
+        month++;
+        if (month > 12){
+            year++;
+            month = 1;
+        }
+        setCalendar();
+    }
+
+
 
     private final int bNum1 =1;
     private final int bNum2 =2;
@@ -216,5 +238,8 @@ public class Main implements Initializable {
         prn(year, month, B33, bNum33);
         prn(year, month, B34, bNum34);
         prn(year, month, B35, bNum35);
+
+        yearLabel.setText(year+"");
+        monthLabel.setText(month+"");
     }
 }

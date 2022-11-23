@@ -40,18 +40,18 @@
                   <String fx:value="round" />
                </styleClass>
                <children>
-                  <Label fx:id="year" layoutX="231.0" layoutY="14.0" text="2021">
+                  <Label fx:id="yearLabel" layoutX="231.0" layoutY="14.0" text="2021">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="month" layoutX="242.0" layoutY="42.0" text="1">
+                  <Label fx:id="monthLabel" layoutX="242.0" layoutY="42.0" text="1">
                      <font>
                         <Font size="48.0" />
                      </font>
                   </Label>
-                  <Button fx:id="lastMonth" layoutX="59.0" layoutY="59.0" mnemonicParsing="false" text="&lt;" />
-                  <Button fx:id="nextMonth" layoutX="401.0" layoutY="59.0" mnemonicParsing="false" text="&gt;" />
+                  <Button fx:id="lastMonthBtn" layoutX="59.0" layoutY="59.0" mnemonicParsing="false" onAction="#lastMonth" text="&lt;" />
+                  <Button fx:id="nextMonthBtn" layoutX="401.0" layoutY="59.0" mnemonicParsing="false" onAction="#nextMonth" text="&gt;" />
                   <Label layoutX="35.0" layoutY="124.0" text="일요일" />
                   <Label layoutX="110.0" layoutY="124.0" text="월요일" />
                   <Label layoutX="185.0" layoutY="124.0" text="화요일" />

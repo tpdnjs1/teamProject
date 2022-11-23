@@ -132,4 +132,6 @@ public class Main implements Initializable {
     private ToggleButton B34;
     @FXML
     private ToggleButton B35;
+
+
 }

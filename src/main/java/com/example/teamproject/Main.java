@@ -11,12 +11,9 @@ import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
+import static com.example.teamproject.Calendar.prn;
+
 public class Main implements Initializable {
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
 
     MovePage movePage = new MovePage();
     @FXML
@@ -49,21 +46,54 @@ public class Main implements Initializable {
         movePage.changeScene("Setting", setting);
     }
 
-    LocalDate now = LocalDate.now();
-    int iYear = now.getYear();
-    int iMonth = now.getMonthValue();
-    int iDay = now.getDayOfMonth();
+
 
     @FXML
-    private Label year;
+    private Label yearLabel;
     @FXML
-    private Label month;
+    private Label monthLabel;
     @FXML
-    private Button lastMonth;
+    private Button lastMonthBtn;
     @FXML
-    private Button nextMonth;
+    private Button nextMonthBtn;
     @FXML
     private ToggleGroup date = new ToggleGroup();
+
+    private int bNum1;
+    private int bNum2;
+    private int bNum3;
+    private int bNum4;
+    private int bNum5;
+    private int bNum6;
+    private int bNum7;
+    private int bNum8;
+    private int bNum9;
+    private int bNum10;
+    private int bNum11;
+    private int bNum12;
+    private int bNum13;
+    private int bNum14;
+    private int bNum15;
+    private int bNum16;
+    private int bNum17;
+    private int bNum18;
+    private int bNum19;
+    private int bNum20;
+    private int bNum21;
+    private int bNum22;
+    private int bNum23;
+    private int bNum24;
+    private int bNum25;
+    private int bNum26;
+    private int bNum27;
+    private int bNum28;
+    private int bNum29;
+    private int bNum30;
+    private int bNum31;
+    private int bNum32;
+    private int bNum33;
+    private int bNum34;
+    private int bNum35;
     @FXML
     private ToggleButton B1;
     @FXML
@@ -135,15 +165,35 @@ public class Main implements Initializable {
     @FXML
     private ToggleButton B35;
 
-    private static int getDate(int month) {
-        int tmp = switch (month) {
-            case 1, 3, 5, 7, 8, 10, 12 -> 31;
-            case 4, 6, 9, 11 -> 30;
-            case 2 -> 29;
-            default -> 0;
-        };
+    private int daySum;
 
-        return tmp;
+    LocalDate now = LocalDate.now();
+    int year;
+    int month;
+    int day;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        year = now.getYear();
+        month = now.getMonthValue();
+        day = now.getDayOfMonth();
     }
 
+    private void setCalendar(){
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+        prn(year, month, B1, bNum1);
+    }
 }

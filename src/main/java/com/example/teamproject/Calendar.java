@@ -1,5 +1,8 @@
 package com.example.teamproject;
 
+import javafx.scene.control.Button;
+import javafx.scene.control.ToggleButton;
+
 public class Calendar {
 
     private static int getDate(int month) {
@@ -15,8 +18,8 @@ public class Calendar {
 
     //해당 월의 첫번째 요일 계산
     private static int getDayOfWeek(int year, int month) {
-        int dayOfWeek = 0;
-        int sum = 0;
+        int dayOfWeek;
+        int sum = 1;
 
         // 1.1.1 ~ year-1.12.31
         for (int i = 1; i < year; i++) {
@@ -24,7 +27,6 @@ public class Calendar {
                 sum += getDate(j);
             }
         }
-
         //year.1.1 ~ year.month-1.마지막(31,30.29.28)
         for (int k = 1; k < month; k++) {
             sum += getDate(k);
@@ -39,14 +41,16 @@ public class Calendar {
         return dayOfWeek;
     }
 
-    public static void prn(int year, int month) {
+    public static void prn(int year, int month, ToggleButton btn, int bNum) {
         //시작 요일
         int start = getDayOfWeek(year, month);
 
         //마지막 날짜
         int last = getDate(month);
 
-        //시작 요일만큼 빈공간
+        int day = bNum-start;
+
+/*        //시작 요일만큼 빈공간
         for (int i = 1; i <= start; i++) {
             System.out.print("\t");
         }
@@ -58,6 +62,15 @@ public class Calendar {
             if (start % 7 == 0) {
                 System.out.println();
             }
+        }*/
+
+        if (start >= bNum || last < day){
+            btn.setText(" ");
+        } else {
+            btn.setText(String.valueOf(day));
         }
+
     }
+
+
 }

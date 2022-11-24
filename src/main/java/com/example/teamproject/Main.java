@@ -129,6 +129,13 @@ public class Main implements Initializable {
     private final int BNUM33 =33;
     private final int BNUM34 =34;
     private final int BNUM35 =35;
+    private final int BNUM36 =36;
+    private final int BNUM37 =37;
+    private final int BNUM38 =38;
+    private final int BNUM39 =39;
+    private final int BNUM40 =40;
+    private final int BNUM41 =41;
+    private final int BNUM42 =42;
 
     @FXML
     private ToggleButton B1;
@@ -200,12 +207,20 @@ public class Main implements Initializable {
     private ToggleButton B34;
     @FXML
     private ToggleButton B35;
-
-    private void ifToday(ToggleButton btn){
-        if ( year == now.getYear() & month == now.getMonthValue() & Integer.valueOf(btn.getText()) == day){
-            btn.setUnderline(true);
-        }
-    }
+    @FXML
+    private ToggleButton B36;
+    @FXML
+    private ToggleButton B37;
+    @FXML
+    private ToggleButton B38;
+    @FXML
+    private ToggleButton B39;
+    @FXML
+    private ToggleButton B40;
+    @FXML
+    private ToggleButton B41;
+    @FXML
+    private ToggleButton B42;
 
     private void setCalendar(){
         prn(year, month, B1, BNUM1);
@@ -243,6 +258,13 @@ public class Main implements Initializable {
         prn(year, month, B33, BNUM33);
         prn(year, month, B34, BNUM34);
         prn(year, month, B35, BNUM35);
+        prn(year, month, B36, BNUM36);
+        prn(year, month, B37, BNUM37);
+        prn(year, month, B38, BNUM38);
+        prn(year, month, B39, BNUM39);
+        prn(year, month, B40, BNUM40);
+        prn(year, month, B41, BNUM41);
+        prn(year, month, B42, BNUM42);
 
 
         yearLabel.setText(year+"");

@@ -1,14 +1,17 @@
 package com.example.teamproject;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ToggleButton;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 import static com.example.teamproject.Calendar.prn;
@@ -57,21 +60,54 @@ public class Main implements Initializable {
     @FXML
     private Button nextMonthBtn;
     @FXML
+    private ListView<Diary> list;
+
+    private ObservableList<Diary> items;
+
+    @FXML
     private ToggleGroup date = new ToggleGroup();
 
     LocalDate now;
     int year;
     int month;
     int day;
+    String stDay = year+"-"+month+"-"+day;
+
+    DBUtil db = new DBUtil();
+    Connection conn = db.getConnection();
+    PreparedStatement pstmt = null;
+    ResultSet rs = null;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        items = FXCollections.observableArrayList();
+        list.setItems(items);
+
+        addDiaryList();
+
         now = LocalDate.now();
         year = now.getYear();
         month = now.getMonthValue();
         day = now.getDayOfMonth();
         setCalendar();
     }
+
+    public void addDiaryList(){
+        String sql = "SELECT * FROM `diary` WHERE `uid` =" + movePage.getUid();
+
+        try {
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+            while(rs.next()) {
+                Diary diary = new Diary(rs.getString("title"), rs.getDate("date"), rs.getString("text"));
+                items.add(diary);
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
 
     @FXML
     private void lastMonth(){

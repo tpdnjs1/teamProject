@@ -65,7 +65,7 @@
                   <Font name="Corbel" size="48.0" />
                </font>
             </Label>
-            <HBox layoutX="112.0" layoutY="43.0" prefHeight="20.0" prefWidth="97.0">
+            <HBox layoutX="112.0" layoutY="52.0" prefHeight="20.0" prefWidth="97.0">
                <children>
                   <Label fx:id="chanNum" text="1">
                      <font>
@@ -94,7 +94,7 @@
             </Label>
             <TextArea layoutX="46.0" layoutY="239.0" prefHeight="335.0" prefWidth="522.0" promptText="please answer the question" styleClass="shadow" stylesheets="@Design.css">
                <font>
-                  <Font name="Microsoft Tai Le" size="14.0" />
+                  <Font name="Corbel" size="14.0" />
                </font>
             </TextArea>
             <Button layoutX="219.0" layoutY="590.0" mnemonicParsing="false" onAction="#moveText" prefHeight="30.0" prefWidth="177.0" text="Push">
@@ -104,6 +104,16 @@
                   <String fx:value="BtnRound" />
                </styleClass>
             </Button>
+            <Label layoutX="260.0" layoutY="200.0" text="Time left to answer questions">
+               <font>
+                  <Font name="Corbel" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="443.0" layoutY="201.0" text="00:00:00">
+               <font>
+                  <Font name="Courier New" size="14.0" />
+               </font>
+            </Label>
          </children></Pane>
    </children>
 </AnchorPane>

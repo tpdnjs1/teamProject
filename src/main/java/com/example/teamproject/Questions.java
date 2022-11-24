@@ -22,9 +22,9 @@ public class Questions {
     @FXML
     private void moveQuestion(){movePage.changeScene("Questions", question);}
     @FXML
-
     private void moveSetting(){movePage.changeScene("Setting", setting);}
 
-
+    @FXML
+    private void 
 
 }

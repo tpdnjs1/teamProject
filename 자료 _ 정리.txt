@@ -2,9 +2,10 @@ name - Cresent account book (CAB)
 
 * 자료 모음 * 
 https://developers.kakao.com/product/kakaoPay
-- 토스 페이 자료 추가 - 
-https://www.youtube.com/watch?v=zJZ-ogqin2o
+- 토스 페이 자료 추가 -
+
 -12시에 질문 오게 하는 코드-
+https://www.youtube.com/watch?v=zJZ-ogqin2o
 
 / 기능 / 
 

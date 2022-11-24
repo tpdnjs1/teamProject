@@ -1,0 +1,48 @@
+- 카뱅 결제 관리 api 사용 방법 링크 -
+https://developers.kakao.com/docs/latest/ko/kakaomoment/billing
+
+- 가상 계좌 생성 코드 -
+POST /openapi/v4/billing/virtualAccount HTTP/1.1
+Host: apis.moment.kakao.com
+Authorization: Bearer ${ACCESS_TOKEN}
+
+
+- api 연동 방법 링크 -
+https://jung-story.tistory.com/130
+
+* REST API 사용 코드 *
+
+   @ApiOperation(value = "외부 Api 인터페이스 태우기",
+                  notes = "사용자 등록 및 업데이트시 사용")
+    @PostMapping("/api/setting/agent/manage/userLogoutImpl")
+    public Object UserLogoutInterface(@JsonParam webJSON jsonParams) throws Exception
+    {
+        OkHttpClient client = new OkHttpClient().newBuilder().build();
+
+        // 전달하고자 하는 데이터를 JSON 형식으로 FormDataPart에 삽입.
+        RequestBody body = new MultipartBody.Builder().setType(MultipartBody.FORM)
+        .addFormDataPart("Param", "{\"Name\":\"JUNG\",\"Number\":\"11111\",\"Test\":\"테스트데이터1\",\"Test2\":\"테스트데이터2\"}")
+        .build();
+        // url안의 주소는 호출하고자 하는 API의 주소 및 포트번호
+        Request request = new Request.Builder().url("http://121.88.888.236:40080/API/").post(body).build();
+        try {
+        	// 외부API에 전달하는 값
+            Response response = client.newCall(request).execute();
+            try {
+            	// 외부 API로 부터 반환받는 값
+                JSONObject json = new JSONObject(response.body().string());
+                log.debug("json ==============="+ json);
+            }
+            catch(JSONException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        catch(IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        log.debug("jsonParams =====================" + jsonParams);
+        return jsonParams;
+    }
+

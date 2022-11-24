@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 22-11-22 04:25
+-- 생성 시간: 22-11-24 07:20
 -- 서버 버전: 10.4.21-MariaDB
 -- PHP 버전: 7.3.31
 
@@ -30,7 +30,21 @@ SET time_zone = "+00:00";
 CREATE TABLE `answers` (
   `uid` int(11) NOT NULL,
   `qNum` int(11) NOT NULL,
-  `answer` text NOT NULL
+  `answer` text NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- 테이블 구조 `diary`
+--
+
+CREATE TABLE `diary` (
+  `uid` int(11) NOT NULL,
+  `title` char(20) NOT NULL,
+  `text` text NOT NULL,
+  `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------

@@ -97,7 +97,7 @@
                   <Font name="Microsoft Tai Le" size="14.0" />
                </font>
             </TextArea>
-            <Button layoutX="219.0" layoutY="590.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="177.0" text="Push">
+            <Button layoutX="219.0" layoutY="590.0" mnemonicParsing="false" onAction="#moveText" prefHeight="30.0" prefWidth="177.0" text="Push">
                <styleClass>
                   <String fx:value="fourthColor" />
                   <String fx:value="shadow" />

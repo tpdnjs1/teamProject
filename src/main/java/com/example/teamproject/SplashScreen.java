@@ -21,26 +21,15 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class SplashScreen implements Initializable {
+public class SplashScreen{
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
 
     MovePage movePage = new MovePage();
 
     @FXML
     private Label skip;
 
-    @FXML
-    private void onMouse(){
-        skip.setUnderline(true);
-    }
-    @FXML
-    private void offMouse(){
-        skip.setUnderline(false);
-    }
+
     @FXML
     private void skipPage(){
         movePage.changeSceneLabel("Login", skip);

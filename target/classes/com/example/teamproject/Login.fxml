@@ -39,6 +39,7 @@
                   <String fx:value="firstColor" />
                   <String fx:value="shadow" />
                   <String fx:value="BtnRound" />
+                  <String fx:value="underline" />
                </styleClass></Button>
             <Label layoutX="388.0" layoutY="119.0" text="Users Login">
                <font>
@@ -49,7 +50,7 @@
          </children>
       </Pane>
       <Label layoutX="534.0" layoutY="566.0" text="Don't hava an account?" textFill="#666666d6" />
-      <Label fx:id="signUpLabel" layoutX="680.0" layoutY="566.0" onMouseClicked="#changeToSignUp" onMouseEntered="#onMouse" onMouseExited="#offMouse" text="Create Account" textFill="#916cbc" />
-      <Label fx:id="NextScreen" layoutX="435.0" layoutY="42.0" onMouseClicked="#NextLabel" text="Skip _편의상" />
+      <Label fx:id="signUpLabel" layoutX="680.0" layoutY="566.0" onMouseClicked="#changeToSignUp" styleClass="underline" text="Create Account" textFill="#916cbc" />
+      <Label fx:id="NextScreen" layoutX="435.0" layoutY="42.0" onMouseClicked="#NextLabel" styleClass="underline" text="Skip _편의상" />
    </children>
 </AnchorPane>

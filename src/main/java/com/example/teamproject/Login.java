@@ -27,18 +27,9 @@ public class Login implements Initializable {
     private Button loginBtn;
     @FXML
     private Label signUpLabel;
-
     @FXML
     private Label NextScreen;
 
-    @FXML
-    private void onMouse(){
-        signUpLabel.setUnderline(true);
-    }
-    @FXML
-    private void offMouse(){
-        signUpLabel.setUnderline(false);
-    }
 
     @FXML
     private void NextLabel() {

@@ -23,14 +23,6 @@ public class SplashScreen2 {
     private Label skip;
 
     @FXML
-    private void onMouse(){
-        skip.setUnderline(true);
-    }
-    @FXML
-    private void offMouse(){
-        skip.setUnderline(false);
-    }
-    @FXML
     private void skipPage(){
         movePage.changeSceneLabel("Login", skip);
     }

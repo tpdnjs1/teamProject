@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="container" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen">
+<AnchorPane fx:id="container" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen">
    <children>
       <Pane layoutX="100.0" layoutY="150.0" prefHeight="350.0" prefWidth="350.0" styleClass="SPCalendar" stylesheets="@Design.css" />
       <Label layoutX="494.0" layoutY="177.0" text="Account Book Calendar">
@@ -20,12 +20,13 @@
             <String fx:value="shadow" />
             <String fx:value="firstColor" />
             <String fx:value="BtnRound" />
+            <String fx:value="underline" />
          </styleClass>
       </Button>
       <Pane layoutX="644.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="Circle" stylesheets="@Design.css" />
       <Pane layoutX="666.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
       <Pane layoutX="687.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
-      <Label fx:id="skip" layoutX="855.0" layoutY="14.0" onMouseClicked="#skipPage" onMouseEntered="#onMouse" onMouseExited="#offMouse" text="Skip" textFill="#8a8a8a">
+      <Label fx:id="skip" layoutX="855.0" layoutY="14.0" onMouseClicked="#skipPage" styleClass="underline" text="Skip" textFill="#8a8a8a">
          <font>
             <Font name="Corbel" size="16.0" />
          </font>

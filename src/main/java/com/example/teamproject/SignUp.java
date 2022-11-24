@@ -23,15 +23,6 @@ public class SignUp {
     @FXML
     private Label loginLabel;
 
-    @FXML
-    private void onMouse() {
-        loginLabel.setUnderline(true);
-    }
-
-    @FXML
-    private void offMouse() {
-        loginLabel.setUnderline(false);
-    }
 
     public void insertMember() {
         DBUtil db = new DBUtil();

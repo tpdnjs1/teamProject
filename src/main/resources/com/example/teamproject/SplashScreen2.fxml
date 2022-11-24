@@ -20,12 +20,13 @@
             <String fx:value="shadow" />
             <String fx:value="firstColor" />
             <String fx:value="BtnRound" />
+            <String fx:value="underline" />
          </styleClass>
       </Button>
       <Pane layoutX="644.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
       <Pane layoutX="666.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="Circle" stylesheets="@Design.css" />
       <Pane layoutX="687.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
-      <Label fx:id="skip" layoutX="855.0" layoutY="14.0" onMouseClicked="#skipPage" onMouseEntered="#onMouse" onMouseExited="#offMouse" text="Skip" textFill="#8a8a8a">
+      <Label fx:id="skip" layoutX="855.0" layoutY="14.0" onMouseClicked="#skipPage" styleClass="underline" text="Skip" textFill="#8a8a8a">
          <font>
             <Font name="Corbel" size="16.0" />
          </font>

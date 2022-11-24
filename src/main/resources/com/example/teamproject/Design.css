@@ -18,6 +18,9 @@
     -fx-border-color: rgba(0, 0, 0, 0);
 }
 
+.underline:hover {
+    -fx-underline: true;
+}
 
 
 .Btn:hover {

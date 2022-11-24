@@ -24,7 +24,4 @@ public class Questions {
     @FXML
     private void moveSetting(){movePage.changeScene("Setting", setting);}
 
-    @FXML
-    private void 
-
 }

@@ -8,6 +8,7 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class Login implements Initializable {
@@ -63,6 +64,7 @@ public class Login implements Initializable {
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
 
+
             while(rs.next()) {
                 String dataID = rs.getString("id");
                 String dataPW = rs.getString("pw");
@@ -70,6 +72,7 @@ public class Login implements Initializable {
                 id = dataID;
                 pw = dataPW;
 
+                MovePage.setUid(rs.getString("uid"));
             }
         }catch (Exception e) {
             System.out.println(" ");
@@ -78,6 +81,7 @@ public class Login implements Initializable {
         //id, pw TextField 입력 확인
         if(getID.equals(id)) {
             if(getPW.equals(pw)) {
+
                 //화면 넘김
                 movePage.changeScene("Main", loginBtn);
             }else {

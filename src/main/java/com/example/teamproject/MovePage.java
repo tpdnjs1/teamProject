@@ -11,9 +11,21 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.Objects;
 
 public class MovePage {
+
+    private static String uid;
+
+    public String getUid() {
+        return uid;
+    }
+
+    public static void setUid(String sUid) {
+        uid = sUid;
+    }
 
     public void changeScene(String pageName, Button changeBtn) {
         try {

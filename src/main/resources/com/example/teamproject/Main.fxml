@@ -118,13 +118,13 @@
                   <ToggleButton fx:id="B33" layoutX="338.0" layoutY="470.0" mnemonicParsing="false" text="B33" toggleGroup="$date" />
                   <ToggleButton fx:id="B34" layoutX="412.0" layoutY="470.0" mnemonicParsing="false" text="B34" toggleGroup="$date" />
                   <ToggleButton fx:id="B35" layoutX="488.0" layoutY="470.0" mnemonicParsing="false" text="B35" toggleGroup="$date" />
-                  <ToggleButton layoutX="38.0" layoutY="540.0" mnemonicParsing="false" text="B36" />
-                  <ToggleButton layoutX="113.0" layoutY="540.0" mnemonicParsing="false" text="B37" />
-                  <ToggleButton layoutX="188.0" layoutY="540.0" mnemonicParsing="false" text="B38" />
-                  <ToggleButton layoutX="263.0" layoutY="540.0" mnemonicParsing="false" text="B39" />
-                  <ToggleButton layoutX="338.0" layoutY="540.0" mnemonicParsing="false" text="B40" />
-                  <ToggleButton layoutX="412.0" layoutY="540.0" mnemonicParsing="false" text="B41" />
-                  <ToggleButton layoutX="488.0" layoutY="540.0" mnemonicParsing="false" text="B42" />
+                  <ToggleButton fx:id="B36" layoutX="38.0" layoutY="540.0" mnemonicParsing="false" text="B36" toggleGroup="$date" />
+                  <ToggleButton fx:id="B37" layoutX="113.0" layoutY="540.0" mnemonicParsing="false" text="B37" toggleGroup="$date" />
+                  <ToggleButton fx:id="B38" layoutX="188.0" layoutY="540.0" mnemonicParsing="false" text="B38" toggleGroup="$date" />
+                  <ToggleButton fx:id="B39" layoutX="263.0" layoutY="540.0" mnemonicParsing="false" text="B39" toggleGroup="$date" />
+                  <ToggleButton fx:id="B40" layoutX="338.0" layoutY="540.0" mnemonicParsing="false" text="B40" toggleGroup="$date" />
+                  <ToggleButton fx:id="B41" layoutX="412.0" layoutY="540.0" mnemonicParsing="false" text="B41" toggleGroup="$date" />
+                  <ToggleButton fx:id="B42" layoutX="488.0" layoutY="540.0" mnemonicParsing="false" text="B42" toggleGroup="$date" />
                </children>
             </Pane>
             <Pane layoutX="581.0" layoutY="20.0" prefHeight="93.0" prefWidth="220.0">

@@ -6,6 +6,11 @@ https://developers.kakao.com/product/kakaoPay
 
 -12시에 질문 오게 하는 코드-
 https://www.youtube.com/watch?v=zJZ-ogqin2o
+api 연결
+https://fbtmdwhd33.tistory.com/264
+
+카카오페이 주문 조회
+https://developers.kakao.com/docs/latest/ko/reference/rest-api-reference
 
 / 기능 / 
 

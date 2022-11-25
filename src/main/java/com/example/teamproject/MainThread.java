@@ -5,6 +5,8 @@ public class MainThread extends Thread {
 
     public boolean threadOn;
 
+    
+
     @Override
     public void run() {
 

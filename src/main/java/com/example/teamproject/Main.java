@@ -19,6 +19,8 @@ import static com.example.teamproject.Calendar.prn;
 public class Main implements Initializable {
 
     MovePage movePage = new MovePage();
+    MainThread turnThread = new MainThread();
+
     @FXML
     private Button add;
     @FXML
@@ -37,16 +39,19 @@ public class Main implements Initializable {
     @FXML
     private void moveMain() {
         movePage.changeScene("Main", main);
+        turnThread.threadOn = false;
     }
 
     @FXML
     private void moveQuestion() {
         movePage.changeScene("Questions", question);
+        turnThread.threadOn = false;
     }
 
     @FXML
     private void moveSetting() {
         movePage.changeScene("Setting", setting);
+        turnThread.threadOn = false;
     }
 
 
@@ -78,12 +83,13 @@ public class Main implements Initializable {
     PreparedStatement pstmt = null;
     ResultSet rs = null;
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         items = FXCollections.observableArrayList();
         list.setItems(items);
 
-        addDiaryList();
+        turnThread.threadOn = true;
 
         now = LocalDate.now();
         year = now.getYear();

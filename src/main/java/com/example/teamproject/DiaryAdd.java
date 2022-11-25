@@ -14,6 +14,7 @@ import java.time.LocalDate;
 
 public class DiaryAdd {
     MovePage movePage = new MovePage();
+    Main main = new Main();
 
     @FXML
     private TextField title;

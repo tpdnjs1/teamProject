@@ -25,7 +25,6 @@ import static java.time.temporal.ChronoUnit.DAYS;
 public class Main implements Initializable {
 
     MovePage movePage = new MovePage();
-    MainThread turnThread = new MainThread();
 
     @FXML
     private Button add;
@@ -45,19 +44,19 @@ public class Main implements Initializable {
     @FXML
     private void moveMain() {
         movePage.changeScene("Main", main);
-        turnThread.threadOn = false;
+
     }
 
     @FXML
     private void moveQuestion() {
         movePage.changeScene("Questions", question);
-        turnThread.threadOn = false;
+
     }
 
     @FXML
     private void moveSetting() {
         movePage.changeScene("Setting", setting);
-        turnThread.threadOn = false;
+
     }
 
 
@@ -95,13 +94,14 @@ public class Main implements Initializable {
         items = FXCollections.observableArrayList();
         list.setItems(items);
 
-        turnThread.threadOn = true;
 
         now = LocalDate.now();
         year = now.getYear();
         month = now.getMonthValue();
         day = now.getDayOfMonth();
         setCalendar();
+
+        dDay();
     }
 
     public void addDiaryList(){
@@ -320,17 +320,13 @@ public class Main implements Initializable {
     }
 
     // * 캘린더 연말 디데이 구현
-
+    @FXML
     private Label DdayLabel;
 
-    public void run() {
+    public void dDay() {
         LocalDate fromDate = LocalDate.now();
         LocalDate toDate = LocalDate.of(2022, 12, 31);
-
-// Duration.between
-        System.out.println("D - " + Duration.between(fromDate.atStartOfDay(), toDate.atStartOfDay()).toDays());
-
-
+        DdayLabel.setText("D - " + Duration.between(fromDate.atStartOfDay(), toDate.atStartOfDay()).toDays());
 
     }
 

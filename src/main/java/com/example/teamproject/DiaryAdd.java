@@ -25,7 +25,7 @@ public class DiaryAdd {
 
     @FXML
     private void add(){
-        if (title.getText().length() > 20){
+        if (title.getText().length() > 12){
             alert("제목은 20자를 넘을 수 없습니다.", null);
             return;
         }

@@ -1,6 +1,3 @@
-Account Book Calendar
-You can write down your income and expenditure on your calendar and see it at a glance.
-
 Diary
 You can record what you have experienced or thought every day.
 

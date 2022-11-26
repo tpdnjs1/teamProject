@@ -1,24 +1,14 @@
-name - Cresent account book (CAB)
+name - Cresent book (CB)
 
 * 자료 모음 * 
-https://developers.kakao.com/product/kakaoPay
-- 토스 페이 자료 추가 -
 
 -12시에 질문 오게 하는 코드-
 https://www.youtube.com/watch?v=zJZ-ogqin2o
-api 연결
-https://fbtmdwhd33.tistory.com/264
-
-카카오페이 주문 조회
-https://developers.kakao.com/docs/latest/ko/reference/rest-api-reference
 
 / 기능 / 
 
-- 은행 선택 가능 ( 토스 / 카카오 )
-  : 자주 사용하는 은행 선택해서 프로그램 사용
-
-- 캘린더 그날 쓴 금액 저장 및 예산 지정 가능
-  : 예산 초과 시 알람 울림
+- 캘린더 윗 부분에 남은 날짜 표시
+  : D-** 표시
 
 - 자기 개발을 위한 1문 1답
   : 매일 다른 질문을 받아서 자신을 돌아보고 개발할 수 있는 기회 제공

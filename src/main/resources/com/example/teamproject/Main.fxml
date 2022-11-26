@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Main">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Main">
    <children>
       <Button fx:id="main" layoutX="26.0" layoutY="257.0" mnemonicParsing="false" onAction="#moveMain" prefHeight="35.0" prefWidth="35.0">
          <styleClass>
@@ -268,12 +268,12 @@
                   <String fx:value="round" />
                </styleClass>
                <children>
-                  <Label layoutX="57.0" layoutY="14.0" text="Total monthly usage">
+                  <Label layoutX="61.0" layoutY="14.0" text="the rest of the year">
                      <font>
                         <Font name="Franklin Gothic Medium" size="12.0" />
                      </font>
                   </Label>
-                  <Label layoutX="67.0" layoutY="39.0" text="30000">
+                  <Label layoutX="69.0" layoutY="37.0" text="D - 32">
                      <font>
                         <Font name="Calibri" size="34.0" />
                      </font>

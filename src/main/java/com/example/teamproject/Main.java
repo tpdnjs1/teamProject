@@ -1,5 +1,6 @@
 package com.example.teamproject;
 
+import javafx.beans.binding.BooleanExpression;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -10,11 +11,16 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.time.Duration;
 import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.ResourceBundle;
 
 import static com.example.teamproject.Calendar.prn;
+import static java.lang.Thread.sleep;
+import static java.time.temporal.ChronoUnit.DAYS;
 
 public class Main implements Initializable {
 
@@ -312,4 +318,21 @@ public class Main implements Initializable {
         yearLabel.setText(year+"");
         monthLabel.setText(month+"");
     }
+
+    // * 캘린더 연말 디데이 구현
+
+    private Label DdayLabel;
+
+    public void run() {
+        LocalDate fromDate = LocalDate.now();
+        LocalDate toDate = LocalDate.of(2022, 12, 31);
+
+// Duration.between
+        System.out.println("D - " + Duration.between(fromDate.atStartOfDay(), toDate.atStartOfDay()).toDays());
+
+
+
+    }
+
+
 }

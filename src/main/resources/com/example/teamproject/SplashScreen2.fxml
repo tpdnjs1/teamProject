@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="container" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen2">
+<AnchorPane fx:id="container" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen2">
    <children>
       <Pane layoutX="100.0" layoutY="150.0" prefHeight="350.0" prefWidth="350.0" styleClass="Diary" stylesheets="@Design.css" />
-      <Label layoutX="629.0" layoutY="177.0" text="Diary">
+      <Label layoutX="638.0" layoutY="178.0" text="Diary">
          <font>
             <Font name="Source Code Pro Semibold" size="28.0" />
          </font>
@@ -23,20 +23,19 @@
             <String fx:value="underline" />
          </styleClass>
       </Button>
-      <Pane layoutX="644.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
-      <Pane layoutX="666.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="Circle" stylesheets="@Design.css" />
-      <Pane layoutX="687.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
+      <Pane layoutX="655.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="Circle" stylesheets="@Design.css" />
+      <Pane layoutX="677.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
       <Label fx:id="skip" layoutX="855.0" layoutY="14.0" onMouseClicked="#skipPage" styleClass="underline" text="Skip" textFill="#8a8a8a">
          <font>
             <Font name="Corbel" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="589.0" layoutY="265.0" text="You can record what you have">
+      <Label layoutX="546.0" layoutY="266.0" text="You can record what you have experienced, ">
          <font>
             <Font name="Javanese Text" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="576.0" layoutY="302.0" text=" experienced or thought every day">
+      <Label layoutX="597.0" layoutY="300.0" text=" thought, feeling every day">
          <font>
             <Font name="Javanese Text" size="13.0" />
          </font>

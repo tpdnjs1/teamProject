@@ -1,5 +1,6 @@
 Diary
-You can record what you have experienced or thought every day.
+You can record what you have experienced, thought and feeling every day.
+- 약 수정
 
 Q&A
 Self-improvement questions are updated every day 

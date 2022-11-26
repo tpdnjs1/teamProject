@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen3">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen3">
    <children>
       <Button fx:id="btn" layoutX="586.0" layoutY="443.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="30.0" prefWidth="170.0" stylesheets="@Design.css" text="NEXT">
          <styleClass>
@@ -17,21 +17,20 @@
             <String fx:value="underline" />
          </styleClass>
       </Button>
-      <Pane layoutX="644.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
-      <Pane layoutX="666.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
-      <Pane layoutX="687.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="Circle" stylesheets="@Design.css" />
+      <Pane layoutX="655.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="EmptyCricle" stylesheets="@Design.css" />
+      <Pane layoutX="677.0" layoutY="411.0" prefHeight="10.0" prefWidth="10.0" styleClass="Circle" stylesheets="@Design.css" />
       <Pane layoutX="100.0" layoutY="150.0" prefHeight="350.0" prefWidth="350.0" styleClass="FAQ" stylesheets="@Design.css" />
-      <Label layoutX="641.0" layoutY="177.0" text="Q&amp;A">
+      <Label layoutX="641.0" layoutY="178.0" text="Q&amp;A">
          <font>
             <Font name="Source Code Pro Semibold" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="529.0" layoutY="265.0" text="Self-improvement questions are updated every day">
+      <Label layoutX="529.0" layoutY="266.0" text="Self-improvement questions are updated every day">
          <font>
             <Font name="Javanese Text" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="587.0" layoutY="302.0" text="to do able to reflect on oneself">
+      <Label layoutX="587.0" layoutY="300.0" text="to do able to reflect on oneself">
          <font>
             <Font name="Javanese Text" size="13.0" />
          </font>

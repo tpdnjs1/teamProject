@@ -14,7 +14,6 @@ import java.time.LocalDate;
 
 public class DiaryAdd {
     MovePage movePage = new MovePage();
-    Main main = new Main();
 
     @FXML
     private TextField title;
@@ -23,10 +22,14 @@ public class DiaryAdd {
     @FXML
     private Button addBtn;
 
+    public Boolean needAdd = false;
+
+
+
     @FXML
     private void add(){
         if (title.getText().length() > 12){
-            alert("제목은 20자를 넘을 수 없습니다.", null);
+            alert("제목은 12자를 넘을 수 없습니다.", null);
             return;
         }
 
@@ -45,6 +48,8 @@ public class DiaryAdd {
         } catch (Exception e){
             e.printStackTrace();
         }
+
+        needAdd = true;
 
         Stage pop = (Stage) addBtn.getScene().getWindow();
         pop.close();

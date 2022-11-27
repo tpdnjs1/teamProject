@@ -81,7 +81,8 @@ public class Main implements Initializable {
     int year;
     int month;
     int day;
-    String stDay = year+"-"+month+"-"+day;
+    String stDay;
+    String stMonth;
 
     DBUtil db = new DBUtil();
     Connection conn = db.getConnection();
@@ -94,19 +95,32 @@ public class Main implements Initializable {
         items = FXCollections.observableArrayList();
         list.setItems(items);
 
-
         now = LocalDate.now();
         year = now.getYear();
         month = now.getMonthValue();
         day = now.getDayOfMonth();
+        stDay = year+"-"+month+"-"+day;
+
         setCalendar();
+
+        addDiaryList();
 
         dDay();
     }
 
     public void addDiaryList(){
-        String sql = "SELECT * FROM `diary` WHERE `uid` =" + movePage.getUid();
+        if (items.size() != 0){
+            while (items.size() != 0){
+                items.remove(0);
+            }
+        }
 
+        stMonth = year+"-"+month;
+
+        setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,7) = DATE_FORMAT(now(), '" + stMonth + "')");
+    }
+
+    private void setList(String sql){
         try {
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
@@ -120,7 +134,6 @@ public class Main implements Initializable {
     }
 
 
-
     @FXML
     private void lastMonth(){
         month--;
@@ -129,6 +142,7 @@ public class Main implements Initializable {
             month = 12;
         }
         setCalendar();
+        addDiaryList();
     }
     @FXML
     private void nextMonth(){
@@ -138,6 +152,7 @@ public class Main implements Initializable {
             month = 1;
         }
         setCalendar();
+        addDiaryList();
     }
 
 

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 22-11-24 07:20
--- 서버 버전: 10.4.21-MariaDB
--- PHP 버전: 7.3.31
+-- 생성 시간: 22-11-28 16:01
+-- 서버 버전: 10.4.25-MariaDB
+-- PHP 버전: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,6 +34,13 @@ CREATE TABLE `answers` (
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- 테이블의 덤프 데이터 `answers`
+--
+
+INSERT INTO `answers` (`uid`, `qNum`, `answer`, `date`) VALUES
+(1, 76, '망함', '2022-11-28');
+
 -- --------------------------------------------------------
 
 --
@@ -46,6 +53,18 @@ CREATE TABLE `diary` (
   `text` text NOT NULL,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- 테이블의 덤프 데이터 `diary`
+--
+
+INSERT INTO `diary` (`uid`, `title`, `text`, `date`) VALUES
+(1, '교수님 죄송합니다.', '예 교수님 과제는 5개군요 (네?)\n아뇨 불만 없어요 다 해올게요 (네)\n심지어 창작 과제가 2개라구요? (아)\n잠을 줄여서라도 해야죠 암요 (암요)\n어, 궁금하진 않지만\n질문은 없냐 시기에 여쭤보자면\n학생들에게 다\n이런 과제를 내주시나요', '2022-11-28'),
+(1, '123', '123', '2022-11-28'),
+(1, '456', '456', '2022-11-28'),
+(1, '789', '789', '2022-11-28'),
+(1, 'qwer', 'mnbv', '2022-11-28'),
+(1, 'asf', 'h', '2022-11-28');
 
 -- --------------------------------------------------------
 
@@ -178,6 +197,13 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- 테이블의 덤프 데이터 `users`
+--
+
+INSERT INTO `users` (`uid`, `id`, `pw`, `name`) VALUES
+(1, 'id', 'pw', 'name');
+
+--
 -- 덤프된 테이블의 인덱스
 --
 
@@ -208,7 +234,7 @@ ALTER TABLE `questions`
 -- 테이블의 AUTO_INCREMENT `users`
 --
 ALTER TABLE `users`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

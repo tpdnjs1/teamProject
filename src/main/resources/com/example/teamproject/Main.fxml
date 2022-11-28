@@ -149,146 +149,286 @@
                         <String fx:value="ToggleBtn" />
                         <String fx:value="underline" />
                      </styleClass></ToggleButton>
-                  <ToggleButton fx:id="B8" layoutX="35.0" layoutY="249.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B8" toggleGroup="$date">
+                  <ToggleButton fx:id="B8" layoutX="35.0" layoutY="249.0" mnemonicParsing="false" stylesheets="@Design.css" text="B8" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B9" layoutX="100.0" layoutY="249.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B9" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B9" layoutX="100.0" layoutY="249.0" mnemonicParsing="false" stylesheets="@Design.css" text="B9" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B10" layoutX="175.0" layoutY="249.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B10" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B10" layoutX="175.0" layoutY="249.0" mnemonicParsing="false" stylesheets="@Design.css" text="B10" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B11" layoutX="250.0" layoutY="249.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B11" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B11" layoutX="250.0" layoutY="249.0" mnemonicParsing="false" stylesheets="@Design.css" text="B11" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B12" layoutX="325.0" layoutY="249.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B12" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B12" layoutX="325.0" layoutY="249.0" mnemonicParsing="false" stylesheets="@Design.css" text="B12" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B13" layoutX="400.0" layoutY="249.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B13" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B13" layoutX="400.0" layoutY="249.0" mnemonicParsing="false" stylesheets="@Design.css" text="B13" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B14" layoutX="475.0" layoutY="249.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B14" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B14" layoutX="475.0" layoutY="249.0" mnemonicParsing="false" stylesheets="@Design.css" text="B14" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B15" layoutX="35.0" layoutY="324.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B15" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B15" layoutX="35.0" layoutY="324.0" mnemonicParsing="false" stylesheets="@Design.css" text="B15" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B16" layoutX="100.0" layoutY="324.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B16" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B16" layoutX="100.0" layoutY="324.0" mnemonicParsing="false" stylesheets="@Design.css" text="B16" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B17" layoutX="175.0" layoutY="324.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B17" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B17" layoutX="175.0" layoutY="324.0" mnemonicParsing="false" stylesheets="@Design.css" text="B17" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B18" layoutX="250.0" layoutY="324.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B18" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B18" layoutX="250.0" layoutY="324.0" mnemonicParsing="false" stylesheets="@Design.css" text="B18" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B19" layoutX="325.0" layoutY="324.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B19" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B19" layoutX="325.0" layoutY="324.0" mnemonicParsing="false" stylesheets="@Design.css" text="B19" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B20" layoutX="400.0" layoutY="324.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B20" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B20" layoutX="400.0" layoutY="324.0" mnemonicParsing="false" stylesheets="@Design.css" text="B20" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B21" layoutX="475.0" layoutY="324.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B21" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B21" layoutX="475.0" layoutY="324.0" mnemonicParsing="false" stylesheets="@Design.css" text="B21" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B22" layoutX="35.0" layoutY="399.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B22" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B22" layoutX="35.0" layoutY="399.0" mnemonicParsing="false" stylesheets="@Design.css" text="B22" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B23" layoutX="100.0" layoutY="399.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B23" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B23" layoutX="100.0" layoutY="399.0" mnemonicParsing="false" stylesheets="@Design.css" text="B23" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B24" layoutX="175.0" layoutY="399.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B24" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B24" layoutX="175.0" layoutY="399.0" mnemonicParsing="false" stylesheets="@Design.css" text="B24" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B25" layoutX="250.0" layoutY="399.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B25" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B25" layoutX="250.0" layoutY="399.0" mnemonicParsing="false" stylesheets="@Design.css" text="B25" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B26" layoutX="325.0" layoutY="399.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B26" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B26" layoutX="325.0" layoutY="399.0" mnemonicParsing="false" stylesheets="@Design.css" text="B26" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B27" layoutX="400.0" layoutY="399.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B27" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B27" layoutX="400.0" layoutY="399.0" mnemonicParsing="false" stylesheets="@Design.css" text="B27" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B28" layoutX="475.0" layoutY="399.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B28" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B28" layoutX="475.0" layoutY="399.0" mnemonicParsing="false" stylesheets="@Design.css" text="B28" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B29" layoutX="35.0" layoutY="474.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B29" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B29" layoutX="35.0" layoutY="474.0" mnemonicParsing="false" stylesheets="@Design.css" text="B29" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B30" layoutX="100.0" layoutY="474.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B30" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B30" layoutX="100.0" layoutY="474.0" mnemonicParsing="false" stylesheets="@Design.css" text="B30" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B31" layoutX="175.0" layoutY="474.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B31" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B31" layoutX="175.0" layoutY="474.0" mnemonicParsing="false" stylesheets="@Design.css" text="B31" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B32" layoutX="250.0" layoutY="474.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B32" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B32" layoutX="250.0" layoutY="474.0" mnemonicParsing="false" stylesheets="@Design.css" text="B32" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B33" layoutX="325.0" layoutY="474.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B33" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B33" layoutX="325.0" layoutY="474.0" mnemonicParsing="false" stylesheets="@Design.css" text="B33" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B34" layoutX="400.0" layoutY="474.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B34" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B34" layoutX="400.0" layoutY="474.0" mnemonicParsing="false" stylesheets="@Design.css" text="B34" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B35" layoutX="475.0" layoutY="474.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B35" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B35" layoutX="475.0" layoutY="474.0" mnemonicParsing="false" stylesheets="@Design.css" text="B35" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B36" layoutX="35.0" layoutY="544.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B36" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B36" layoutX="35.0" layoutY="544.0" mnemonicParsing="false" stylesheets="@Design.css" text="B36" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B37" layoutX="100.0" layoutY="544.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B37" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B37" layoutX="100.0" layoutY="544.0" mnemonicParsing="false" stylesheets="@Design.css" text="B37" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B38" layoutX="175.0" layoutY="544.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B38" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B38" layoutX="175.0" layoutY="544.0" mnemonicParsing="false" stylesheets="@Design.css" text="B38" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B39" layoutX="250.0" layoutY="544.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B39" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B39" layoutX="250.0" layoutY="544.0" mnemonicParsing="false" stylesheets="@Design.css" text="B39" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B40" layoutX="325.0" layoutY="544.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B40" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B40" layoutX="325.0" layoutY="544.0" mnemonicParsing="false" stylesheets="@Design.css" text="B40" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B41" layoutX="400.0" layoutY="544.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B41" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B41" layoutX="400.0" layoutY="544.0" mnemonicParsing="false" stylesheets="@Design.css" text="B41" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
-                  <ToggleButton fx:id="B42" layoutX="475.0" layoutY="544.0" mnemonicParsing="false" styleClass="ToggleBtn" stylesheets="@Design.css" text="B42" toggleGroup="$date">
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
+                  <ToggleButton fx:id="B42" layoutX="475.0" layoutY="544.0" mnemonicParsing="false" stylesheets="@Design.css" text="B42" toggleGroup="$date">
                      <font>
                         <Font name="Courier New" size="14.0" />
-                     </font></ToggleButton>
+                     </font>
+                     <styleClass>
+                        <String fx:value="ToggleBtn" />
+                        <String fx:value="underline" />
+                     </styleClass></ToggleButton>
                </children>
             </Pane>
             <Pane layoutX="581.0" layoutY="20.0" prefHeight="93.0" prefWidth="220.0">
@@ -327,6 +467,7 @@
                         <String fx:value="fourthColor" />
                         <String fx:value="BtnRound" />
                         <String fx:value="shadow" />
+                        <String fx:value="underline" />
                      </styleClass>
                   </Button>
                   <ListView fx:id="list" layoutX="10.0" layoutY="99.0" prefHeight="390.0" prefWidth="200.0" stylesheets="@Design.css">
@@ -340,6 +481,7 @@
                         <String fx:value="fourthColor" />
                         <String fx:value="shadow" />
                         <String fx:value="BtnRound" />
+                        <String fx:value="underline" />
                      </styleClass>
                   </Button>
                </children>

@@ -35,13 +35,10 @@
 }
 .underline:selected {
     -fx-underline: true;
-    -fx-font-family: "Courier New";
-    -fx-font-weight: bold;
 }
 
-/*달 버튼 안쪽 그림자.*/
+/*월 버튼 */
 .monthBtn:hover {
-    -fx-text-fill: #ffffff;
 }
 
 /* 버튼 hover */

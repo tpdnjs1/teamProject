@@ -2,6 +2,7 @@ package com.example.teamproject;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 public class Setting {
     MovePage movePage = new MovePage();
@@ -19,6 +20,9 @@ public class Setting {
     private void moveQuestion(){movePage.changeScene("Questions", question);}
     @FXML
     private void moveSetting(){movePage.changeScene("Setting", setting);}
+
+    @FXML
+    private Label signOut;
 
 
 }

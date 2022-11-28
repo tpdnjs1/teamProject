@@ -27,14 +27,6 @@ public class Login implements Initializable {
     private Button loginBtn;
     @FXML
     private Label signUpLabel;
-    @FXML
-    private Label NextScreen;
-
-
-    @FXML
-    private void NextLabel() {
-        movePage.changeSceneLabel("Main", NextScreen);
-    }
 
     String id;
     String pw;

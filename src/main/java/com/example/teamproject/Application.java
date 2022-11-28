@@ -13,7 +13,7 @@ public class Application extends javafx.application.Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("Start.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 900, 650);
         stage.getIcons().add(new Image(getClass().getResourceAsStream("images/Crescent.png")));
-        stage.setTitle("Crescent Account Book");
+        stage.setTitle("Crescent Book");
         stage.setScene(scene);
         stage.show();
     }

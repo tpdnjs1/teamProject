@@ -70,7 +70,6 @@ public class MovePage {
             e.printStackTrace();
         }
     }
-
     public void changeCorrection(String pageName, Label change) {
         try {
             Parent nextPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(pageName + ".fxml")));
@@ -80,5 +79,15 @@ public class MovePage {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        public void changeCorrection (String pageName, Label change){
+            try {
+                Parent nextPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(pageName + ".fxml")));
+                Scene scene = new Scene(nextPage);
+                Stage primaryStage = (Stage) change.getScene().getWindow();
+                primaryStage.setScene(scene);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
-}

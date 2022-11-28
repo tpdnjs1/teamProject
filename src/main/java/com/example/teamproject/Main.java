@@ -39,7 +39,6 @@ public class Main implements Initializable {
     @FXML
     private void moveMain() {
         movePage.changeScene("Main", main);
-
     }
 
     @FXML
@@ -71,23 +70,28 @@ public class Main implements Initializable {
     @FXML
     private Button confirmBtn;
 
-    private String stTitle;
-    private String stText;
+    private String mainTitle;
+    private String mainText;
 
-    public String getStTitle() {
-        return stTitle;
+    public String getMainTitle() {
+        return mainTitle;
     }
-
-    public String getStText() {
-        return stText;
+    public void setMainTitle(String mainTitle) {
+        this.mainTitle = mainTitle;
+    }
+    public String getMainText() {
+        return mainText;
+    }
+    public void setMainText(String mainText) {
+        this.mainText = mainText;
     }
 
     @FXML
     private void confirm() {
         int idx = list.getSelectionModel().getSelectedIndex();
         if (idx >= 0) {
-            stTitle = list.getSelectionModel().getSelectedItem().getTitle();
-            stText = list.getSelectionModel().getSelectedItem().getStText();
+            setMainTitle(list.getSelectionModel().getSelectedItem().getTitle());
+            setMainText(list.getSelectionModel().getSelectedItem().getStText());
             movePage.popUp("Diary", confirmBtn);
         } else {
             alert("일기를 선택해주세요.", null);

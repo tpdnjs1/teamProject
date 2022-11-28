@@ -8,7 +8,7 @@ public class QuList {
     private String answer;
     private Date date;
 
-    public QuList(int listNum, String qNum, String answer, Date date){
+    public QuList(int listNum, String qNum, String answer, Date date) {
         this.listNum = listNum;
         this.qNum = qNum;
         this.answer = answer;
@@ -49,6 +49,6 @@ public class QuList {
 
     @Override
     public String toString() {
-        return "Answer."+ listNum +"  by." + date;
+        return "Answer." + listNum + "  by." + date;
     }
 }

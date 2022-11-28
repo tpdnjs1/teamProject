@@ -18,7 +18,8 @@ public class Diary implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        title.setText(main.getStTitle());
-        text.setText(main.getStText());
+
     }
+
+
 }

@@ -38,7 +38,7 @@
             <Pane layoutX="541.0" layoutY="203.0" prefHeight="320.0" prefWidth="245.0" stylesheets="@Design.css">
                <children>
                   <Pane layoutX="60.0" layoutY="35.0" prefHeight="125.0" prefWidth="125.0" styleClass="Lock" stylesheets="@Design.css" />
-                  <Label fx:id="account" layoutX="83.0" layoutY="225.0" onMouseClicked="#moveAccount" text="correction">
+                  <Label fx:id="account" layoutX="83.0" layoutY="225.0" onMouseClicked="#moveCorrection" text="correction">
                      <font>
                         <Font name="Corbel Bold" size="18.0" />
                      </font>
@@ -83,7 +83,7 @@
             <Pane layoutX="29.0" layoutY="203.0" prefHeight="320.0" prefWidth="245.0" stylesheets="@Design.css">
                <children>
                   <Pane layoutX="62.0" layoutY="40.0" prefHeight="120.0" prefWidth="120.0" styleClass="SignOut" stylesheets="@Design.css" />
-                  <Label fx:id="signUp" layoutX="88.0" layoutY="225.0" onMouseClicked="#moveSingUp" text="Sign Out">
+                  <Label fx:id="signOut" layoutX="88.0" layoutY="225.0" onMouseClicked="#moveSignOut" text="Sign Out">
                      <font>
                         <Font name="Corbel Bold" size="18.0" />
                      </font>

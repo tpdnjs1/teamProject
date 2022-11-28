@@ -24,11 +24,9 @@ public class DiaryAdd {
     private Button addBtn;
 
 
-
-
     @FXML
-    private void add(){
-        if (title.getText().length() > 12){
+    private void add() {
+        if (title.getText().length() > 12) {
             alert("제목은 12자를 넘을 수 없습니다.", null);
             return;
         }
@@ -45,7 +43,7 @@ public class DiaryAdd {
             pstmt.setString(3, text.getText());
             pstmt.setDate(4, Date.valueOf(LocalDate.now()));
             pstmt.executeUpdate();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

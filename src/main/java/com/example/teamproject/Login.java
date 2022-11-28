@@ -8,7 +8,6 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class Login implements Initializable {
@@ -48,7 +47,7 @@ public class Login implements Initializable {
             rs = pstmt.executeQuery();
 
 
-            while(rs.next()) {
+            while (rs.next()) {
                 String dataID = rs.getString("id");
                 String dataPW = rs.getString("pw");
 
@@ -57,21 +56,21 @@ public class Login implements Initializable {
 
                 MovePage.setUid(rs.getString("uid"));
             }
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.out.println(" ");
         }
 
         //id, pw TextField 입력 확인
-        if(getID.equals(id)) {
-            if(getPW.equals(pw)) {
+        if (getID.equals(id)) {
+            if (getPW.equals(pw)) {
 
                 //화면 넘김
                 movePage.changeScene("Main", loginBtn);
-            }else {
+            } else {
                 //비밀번호 불일치시 나오는 알람
                 alert("비밀번호를 다시 입력해주세요.", null);
             }
-        }else {
+        } else {
             //아이디 불일치시 나오는 알람
             alert("아이디를 다시 입력해주세요.", null);
         }
@@ -89,7 +88,7 @@ public class Login implements Initializable {
 
     // sigh-up 화면으로 이동하는 라벨
 
-    public void changeToSignUp(){
+    public void changeToSignUp() {
         movePage.changeSceneLabel("SignUp", signUpLabel);
     }
 

@@ -13,6 +13,9 @@ public class Setting {
     private Button question;
     @FXML
     private Button setting;
+
+    @FXML
+    private Label signOut;
     @FXML
     private Label account;
 
@@ -24,7 +27,11 @@ public class Setting {
     private void moveSetting(){movePage.changeScene("Setting", setting);}
 
     @FXML
-    private void moveAccount(){movePage.popUpLabel("PopUp",account);}
+    private void moveCorrection(){movePage.popUpLabel("PopUp",account);}
+    @FXML
+    private void moveSignOut() {
+        movePage.popUpLabel("Login", signOut);
+    }
 }
 
 

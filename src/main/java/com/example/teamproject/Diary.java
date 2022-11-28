@@ -1,44 +1,97 @@
 package com.example.teamproject;
 
-import java.util.Date;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 
-public class Diary {
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Date;
+import java.util.ResourceBundle;
+
+public class Diary implements Initializable {
+    @FXML
     private String title;
+    @FXML
     private String stText;
     private Date date;
 
-    public Diary(String title, Date date, String stText){
+    String Tt;
+    String De;
+
+
+
+
+    public Diary(String title, Date date, String stText) {
         this.title = title;
         this.stText = stText;
         this.date = date;
     }
 
-    public String getTitle() {
-        return title;
-    }
+    public void SelectDiary() {
+        String getTitle = title.getText();
+        String getDetail = Diary.this.stText.getText();
+        DBUtil db = new DBUtil();
+        Connection conn = db.getConnection();
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
 
-    public Date getDate() {
-        return date;
-    }
+        String sql = "select * from Users WHERE id = '" + getTitle + "'";
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
+        try {
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();
 
-    public String getStText() {
-        return stText;
-    }
 
-    public void setStText(String text) {
-        this.stText = text;
+            while (rs.next()) {
+                String dataTitle = rs.getString("title");
+                String dataDetail = rs.getString("text");
+
+                Tt = dataTitle;
+                De = dataDetail;
+
+
+                MovePage.setUid(rs.getString("uid"));
+
+            }
+        } catch (Exception e) {
+
+        }
+
+        public String getTitle () {
+            return title;
+        }
+
+        public void setTitle (String title){
+            this.title = title;
+        }
+
+        public Date getDate () {
+            return date;
+        }
+
+        public void setDate (Date date){
+            this.date = date;
+        }
+
+        public String getStText () {
+            return stText;
+        }
+
+        public void setStText (String text){
+            this.stText = text;
+        }
+
+        @Override
+        public String toString () {
+            return "" + date + " : " + title;
+        }
     }
 
     @Override
-    public String toString() {
-        return "" + date + " : " + title;
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }

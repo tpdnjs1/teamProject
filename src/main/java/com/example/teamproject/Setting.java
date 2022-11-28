@@ -24,8 +24,8 @@ public class Setting {
     private void moveSetting(){movePage.changeScene("Setting", setting);}
 
     @FXML
-
-    private void moveAccount(){movePage.changeSceneLabel("AccountPopUp",account);}
+    private void moveAccount(){movePage.popUpLabel("AccountPopUp",account);}
+}
 
 
 

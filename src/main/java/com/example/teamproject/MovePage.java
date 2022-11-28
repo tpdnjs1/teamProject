@@ -51,8 +51,8 @@ public class MovePage {
 
     }
 
-    public void popUp(String pageName, Button popBtn) {
-        Stage mainStage = (Stage) popBtn.getScene().getWindow();
+    public void popUp(String pageName, Button popLabel) {
+        Stage mainStage = (Stage) popLabel.getScene().getWindow();
         Stage pop = new Stage(StageStyle.DECORATED);
         pop.initModality(Modality.WINDOW_MODAL);
         pop.initOwner(mainStage);
@@ -70,24 +70,24 @@ public class MovePage {
             e.printStackTrace();
         }
     }
-    public void changeCorrection(String pageName, Label change) {
+
+    public void popUpLabel(String pageName, Label popLabel) {
+        Stage mainStage = (Stage) popLabel.getScene().getWindow();
+        Stage pop = new Stage(StageStyle.DECORATED);
+        pop.initModality(Modality.WINDOW_MODAL);
+        pop.initOwner(mainStage);
         try {
-            Parent nextPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(pageName + ".fxml")));
-            Scene scene = new Scene(nextPage);
-            Stage primaryStage = (Stage) change.getScene().getWindow();
-            primaryStage.setScene(scene);
-        } catch (Exception e) {
+            Parent nextScene = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(pageName + ".fxml")));
+            Scene scene = new Scene(nextScene);
+            pop.setTitle("Crescent Book");
+
+            pop.getIcons().add(new Image(getClass().getResourceAsStream("images/Crescent.png")));
+
+            pop.setScene(scene);
+            pop.setResizable(false);
+            pop.show();
+        } catch (IOException e) {
             e.printStackTrace();
         }
-
-        public void changeCorrection (String pageName, Label change){
-            try {
-                Parent nextPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(pageName + ".fxml")));
-                Scene scene = new Scene(nextPage);
-                Stage primaryStage = (Stage) change.getScene().getWindow();
-                primaryStage.setScene(scene);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
     }
+}

@@ -49,6 +49,6 @@ public class QuList {
 
     @Override
     public String toString() {
-        return "A."+ listNum +" by." + date;
+        return "Answer."+ listNum +"  by." + date;
     }
 }

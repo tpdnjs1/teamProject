@@ -22,7 +22,6 @@ public class Setting {
     private void moveQuestion(){movePage.changeScene("Questions", question);}
     @FXML
     private void moveSetting(){movePage.changeScene("Setting", setting);}
-
     @FXML
     private void moveAccount(){movePage.popUpLabel("AccountPopUp",account);}
 }

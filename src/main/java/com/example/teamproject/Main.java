@@ -194,7 +194,7 @@ public class Main implements Initializable {
     private final int BNUM6 = 6;
     private final int BNUM7 = 7;
     private final int BNUM8 = 8;
-    private final int BNUM9 = 10;
+    private final int BNUM9 = 9;
     private final int BNUM10 = 10;
     private final int BNUM11 = 11;
     private final int BNUM12 = 12;

@@ -194,7 +194,7 @@ public class Main implements Initializable {
     private final int BNUM6 = 6;
     private final int BNUM7 = 7;
     private final int BNUM8 = 8;
-    private final int BNUM9 = 9;
+    private final int BNUM9 = 10;
     private final int BNUM10 = 10;
     private final int BNUM11 = 11;
     private final int BNUM12 = 12;
@@ -363,364 +363,382 @@ public class Main implements Initializable {
         monthLabel.setText(month + "");
     }
 
+    @FXML
     private void B1(){
         deleteList();
         if (B1.getText() != ""){
             day = Integer.parseInt(B1.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B2(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B2.getText() != ""){
             day = Integer.parseInt(B2.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B3(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B3.getText() != ""){
             day = Integer.parseInt(B3.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B4(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B4.getText() != ""){
             day = Integer.parseInt(B4.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B5(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B5.getText() != ""){
             day = Integer.parseInt(B5.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B6(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B6.getText() != ""){
             day = Integer.parseInt(B6.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B7(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B7.getText() != ""){
             day = Integer.parseInt(B7.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B8(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B8.getText() != ""){
             day = Integer.parseInt(B8.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B9(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B9.getText() != ""){
             day = Integer.parseInt(B9.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B10(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B10.getText() != ""){
             day = Integer.parseInt(B10.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B11(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B11.getText() != ""){
             day = Integer.parseInt(B11.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B12(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B12.getText() != ""){
             day = Integer.parseInt(B12.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B13(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B13.getText() != ""){
             day = Integer.parseInt(B13.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B14(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B14.getText() != ""){
             day = Integer.parseInt(B14.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B15(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B15.getText() != ""){
             day = Integer.parseInt(B15.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B16(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B16.getText() != ""){
             day = Integer.parseInt(B16.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B17(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B17.getText() != ""){
             day = Integer.parseInt(B17.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
+    @FXML
     private void B18(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B18.getText() != ""){
             day = Integer.parseInt(B18.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B19(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B19.getText() != ""){
             day = Integer.parseInt(B19.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B20(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B20.getText() != ""){
             day = Integer.parseInt(B20.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B21(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B21.getText() != ""){
             day = Integer.parseInt(B21.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B22(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B22.getText() != ""){
             day = Integer.parseInt(B22.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B23(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B23.getText() != ""){
             day = Integer.parseInt(B23.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B24(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B24.getText() != ""){
             day = Integer.parseInt(B24.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B25(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B25.getText() != ""){
             day = Integer.parseInt(B25.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B26(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B26.getText() != ""){
             day = Integer.parseInt(B26.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B27(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B27.getText() != ""){
             day = Integer.parseInt(B27.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B28(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B28.getText() != ""){
             day = Integer.parseInt(B28.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B29(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B29.getText() != ""){
             day = Integer.parseInt(B29.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B30(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B30.getText() != ""){
             day = Integer.parseInt(B30.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B31(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B31.getText() != ""){
             day = Integer.parseInt(B31.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B32(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B32.getText() != ""){
             day = Integer.parseInt(B32.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B33(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B33.getText() != ""){
             day = Integer.parseInt(B33.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B34(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B34.getText() != ""){
             day = Integer.parseInt(B34.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B35(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B35.getText() != ""){
             day = Integer.parseInt(B35.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B36(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B36.getText() != ""){
             day = Integer.parseInt(B36.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B37(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B37.getText() != ""){
             day = Integer.parseInt(B37.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B38(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B38.getText() != ""){
             day = Integer.parseInt(B38.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B39(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B39.getText() != ""){
             day = Integer.parseInt(B39.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B40(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B40.getText() != ""){
             day = Integer.parseInt(B40.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B41(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B41.getText() != ""){
             day = Integer.parseInt(B41.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
     @FXML
     private void B42(){
         deleteList();
-        if (B1.getText() != ""){
+        if (B42.getText() != ""){
             day = Integer.parseInt(B42.getText());
             stDay = year + "-" + month + "-" + day;
-            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,9) = DATE_FORMAT(now(), '" + stDay + "')");
+            setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,10) = DATE_FORMAT(now(), '" + stDay + "')");
         }
     }
 

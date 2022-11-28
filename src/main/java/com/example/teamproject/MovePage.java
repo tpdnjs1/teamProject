@@ -51,8 +51,28 @@ public class MovePage {
 
     }
 
-    public void popUp(String pageName, Button popBtn){
-        Stage mainStage = (Stage) popBtn.getScene().getWindow();
+    public void popUp(String pageName, Button popLabel){
+        Stage mainStage = (Stage) popLabel.getScene().getWindow();
+        Stage pop = new Stage(StageStyle.DECORATED);
+        pop.initModality(Modality.WINDOW_MODAL);
+        pop.initOwner(mainStage);
+        try {
+            Parent nextScene = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(pageName + ".fxml")));
+            Scene scene = new Scene(nextScene);
+            pop.setTitle("Crescent Book");
+
+            pop.getIcons().add(new Image(getClass().getResourceAsStream("images/Crescent.png")));
+
+            pop.setScene(scene);
+            pop.setResizable(false);
+            pop.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void popUpLabel(String pageName, Label popLabel){
+        Stage mainStage = (Stage) popLabel.getScene().getWindow();
         Stage pop = new Stage(StageStyle.DECORATED);
         pop.initModality(Modality.WINDOW_MODAL);
         pop.initOwner(mainStage);

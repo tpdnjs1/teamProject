@@ -83,10 +83,14 @@
             <Pane layoutX="29.0" layoutY="203.0" prefHeight="320.0" prefWidth="245.0" stylesheets="@Design.css">
                <children>
                   <Pane layoutX="62.0" layoutY="40.0" prefHeight="120.0" prefWidth="120.0" styleClass="SignOut" stylesheets="@Design.css" />
-                  <Label layoutX="88.0" layoutY="225.0" styleClass="shadow" text="Sign Out">
+                  <Label fx:id="signUp" layoutX="88.0" layoutY="225.0" onMouseClicked="#moveSingUp" text="Sign Out">
                      <font>
                         <Font name="Corbel Bold" size="18.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="underline" />
+                     </styleClass>
                   </Label>
                </children>
                <styleClass>

@@ -15,6 +15,8 @@ public class Setting {
     private Button setting;
     @FXML
     private Label account;
+    @FXML
+    private Label signUp;
 
     @FXML
     private void moveMain(){movePage.changeScene("Main", main);}
@@ -25,6 +27,8 @@ public class Setting {
 
     @FXML
     private void moveAccount(){movePage.popUpLabel("AccountPopUp",account);}
+    @FXML
+    private void moveSingUp(){movePage.changeSceneLabel("Login",signUp);}
 }
 
 

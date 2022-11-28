@@ -60,7 +60,6 @@ public class Main implements Initializable {
     }
 
 
-
     @FXML
     private Label yearLabel;
     @FXML
@@ -70,9 +69,26 @@ public class Main implements Initializable {
     @FXML
     private Button nextMonthBtn;
     @FXML
-    private ListView<Diary> list;
+    public ListView<Diary> list;
 
-    private ObservableList<Diary> items;
+    public ObservableList<Diary> items;
+
+    public int idx;
+
+    @FXML
+    private Button confirmBtn;
+
+    @FXML
+    private void confirm() {
+        idx = list.getSelectionModel().getSelectedIndex();
+        if (idx >= 0) {
+
+            movePage.changeScene("Diary", confirmBtn);
+        } else {
+            alert("일기를 선택해주세요.", null);
+        }
+    }
+
 
     @FXML
     private ToggleGroup date = new ToggleGroup();
@@ -99,7 +115,7 @@ public class Main implements Initializable {
         year = now.getYear();
         month = now.getMonthValue();
         day = now.getDayOfMonth();
-        stDay = year+"-"+month+"-"+day;
+        stDay = year + "-" + month + "-" + day;
 
         setCalendar();
 
@@ -108,46 +124,47 @@ public class Main implements Initializable {
         dDay();
     }
 
-    public void addDiaryList(){
-        if (items.size() != 0){
-            while (items.size() != 0){
+    public void addDiaryList() {
+        if (items.size() != 0) {
+            while (items.size() != 0) {
                 items.remove(0);
             }
         }
 
-        stMonth = year+"-"+month;
+        stMonth = year + "-" + month;
 
         setList("SELECT * FROM `diary` WHERE `uid` = " + movePage.getUid() + " and LEFT(date,7) = DATE_FORMAT(now(), '" + stMonth + "')");
     }
 
-    private void setList(String sql){
+    private void setList(String sql) {
         try {
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
-            while(rs.next()) {
+            while (rs.next()) {
                 Diary diary = new Diary(rs.getString("title"), rs.getDate("date"), rs.getString("text"));
                 items.add(diary);
             }
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
 
     @FXML
-    private void lastMonth(){
+    private void lastMonth() {
         month--;
-        if (month < 1){
+        if (month < 1) {
             year--;
             month = 12;
         }
         setCalendar();
         addDiaryList();
     }
+
     @FXML
-    private void nextMonth(){
+    private void nextMonth() {
         month++;
-        if (month > 12){
+        if (month > 12) {
             year++;
             month = 1;
         }
@@ -156,49 +173,48 @@ public class Main implements Initializable {
     }
 
 
-
-    private final int BNUM1 =1;
-    private final int BNUM2 =2;
-    private final int BNUM3 =3;
-    private final int BNUM4 =4;
-    private final int BNUM5 =5;
-    private final int BNUM6 =6;
-    private final int BNUM7 =7;
-    private final int BNUM8 =8;
-    private final int BNUM9 =9;
-    private final int BNUM10 =10;
-    private final int BNUM11 =11;
-    private final int BNUM12 =12;
-    private final int BNUM13 =13;
-    private final int BNUM14 =14;
-    private final int BNUM15 =15;
-    private final int BNUM16 =16;
-    private final int BNUM17 =17;
-    private final int BNUM18 =18;
-    private final int BNUM19 =19;
-    private final int BNUM20 =20;
-    private final int BNUM21 =21;
-    private final int BNUM22 =22;
-    private final int BNUM23 =23;
-    private final int BNUM24 =24;
-    private final int BNUM25 =25;
-    private final int BNUM26 =26;
-    private final int BNUM27 =27;
-    private final int BNUM28 =28;
-    private final int BNUM29 =29;
-    private final int BNUM30 =30;
-    private final int BNUM31 =31;
-    private final int BNUM32 =32;
-    private final int BNUM33 =33;
-    private final int BNUM34 =34;
-    private final int BNUM35 =35;
-    private final int BNUM36 =36;
-    private final int BNUM37 =37;
-    private final int BNUM38 =38;
-    private final int BNUM39 =39;
-    private final int BNUM40 =40;
-    private final int BNUM41 =41;
-    private final int BNUM42 =42;
+    private final int BNUM1 = 1;
+    private final int BNUM2 = 2;
+    private final int BNUM3 = 3;
+    private final int BNUM4 = 4;
+    private final int BNUM5 = 5;
+    private final int BNUM6 = 6;
+    private final int BNUM7 = 7;
+    private final int BNUM8 = 8;
+    private final int BNUM9 = 9;
+    private final int BNUM10 = 10;
+    private final int BNUM11 = 11;
+    private final int BNUM12 = 12;
+    private final int BNUM13 = 13;
+    private final int BNUM14 = 14;
+    private final int BNUM15 = 15;
+    private final int BNUM16 = 16;
+    private final int BNUM17 = 17;
+    private final int BNUM18 = 18;
+    private final int BNUM19 = 19;
+    private final int BNUM20 = 20;
+    private final int BNUM21 = 21;
+    private final int BNUM22 = 22;
+    private final int BNUM23 = 23;
+    private final int BNUM24 = 24;
+    private final int BNUM25 = 25;
+    private final int BNUM26 = 26;
+    private final int BNUM27 = 27;
+    private final int BNUM28 = 28;
+    private final int BNUM29 = 29;
+    private final int BNUM30 = 30;
+    private final int BNUM31 = 31;
+    private final int BNUM32 = 32;
+    private final int BNUM33 = 33;
+    private final int BNUM34 = 34;
+    private final int BNUM35 = 35;
+    private final int BNUM36 = 36;
+    private final int BNUM37 = 37;
+    private final int BNUM38 = 38;
+    private final int BNUM39 = 39;
+    private final int BNUM40 = 40;
+    private final int BNUM41 = 41;
+    private final int BNUM42 = 42;
 
     @FXML
     private ToggleButton B1;
@@ -285,7 +301,7 @@ public class Main implements Initializable {
     @FXML
     private ToggleButton B42;
 
-    private void setCalendar(){
+    private void setCalendar() {
         prn(year, month, B1, BNUM1);
         prn(year, month, B2, BNUM2);
         prn(year, month, B3, BNUM3);
@@ -330,8 +346,8 @@ public class Main implements Initializable {
         prn(year, month, B42, BNUM42);
 
 
-        yearLabel.setText(year+"");
-        monthLabel.setText(month+"");
+        yearLabel.setText(year + "");
+        monthLabel.setText(month + "");
     }
 
     // * 캘린더 연말 디데이 구현
@@ -345,5 +361,12 @@ public class Main implements Initializable {
 
     }
 
-
+    // 알림창 띄우기
+    public void alert(String msg, String header) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("!");
+        alert.setHeaderText(header);
+        alert.setContentText(msg);
+        alert.show();
+    }
 }

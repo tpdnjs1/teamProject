@@ -1,3 +1,13 @@
+/* 버튼 */
+
+.StartBtn {
+    -fx-border-color: Black;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+
 .Btn {
     -fx-background-color: rgba(0, 0, 0, 0);
     -fx-border-color: rgba(0, 0, 0, 0);
@@ -18,10 +28,13 @@
     -fx-border-color: rgba(0, 0, 0, 0);
 }
 
+/* 밑줄 */
+
 .underline:hover {
     -fx-underline: true;
 }
 
+/* 버튼 hover */
 
 .Btn:hover {
     -fx-background-image: url(images/calendar_hover.png);
@@ -40,22 +53,18 @@
     -fx-background-position: center;
 }
 
+/* Round */
 
 .BtnRound {
     -fx-background-radius: 8px;
 }
 
-.StartBtn {
-    -fx-border-color: Black;
-    -fx-background-color: rgba(0, 0, 0, 0);
-    -fx-border-width: 2px;
-    -fx-border-radius: 10px;
-}
-
-
 .round {
     -fx-background-radius: 30px;
 }
+
+
+/* 색 코드 */
 
 .firstColor {
     -fx-background-color: rgba(178, 181, 214, 0.8);
@@ -89,6 +98,8 @@
 .black {
     -fx-background-color: Black;
 }
+
+/* 이미지 */
 
 .LogoImage {
     -fx-background-image: url(images/Crescent.png);
@@ -138,8 +149,8 @@
     -fx-background-position: center;
 }
 
-.Won {
-    -fx-background-image: url(images/Won.png);
+.SignOut {
+    -fx-background-image: url(images/signOut.png);
     -fx-background-size: cover;
     -fx-background-position: center;
 }
@@ -155,9 +166,6 @@
     -fx-background-size: cover;
     -fx-background-position: center;
 }
-
-
-
 
 .Calendar {
     -fx-background-image: url(images/calendar.png);
@@ -176,6 +184,9 @@
     -fx-background-size: cover;
     -fx-background-position: center;
 }
+
+
+/* 그림자 */
 
 .shadow {
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 3, 3);

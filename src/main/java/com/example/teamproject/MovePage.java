@@ -51,7 +51,7 @@ public class MovePage {
 
     }
 
-    public void popUp(String pageName, Button popBtn){
+    public void popUp(String pageName, Button popBtn) {
         Stage mainStage = (Stage) popBtn.getScene().getWindow();
         Stage pop = new Stage(StageStyle.DECORATED);
         pop.initModality(Modality.WINDOW_MODAL);
@@ -71,4 +71,14 @@ public class MovePage {
         }
     }
 
+    public void changeCorrection(String pageName, Label change) {
+        try {
+            Parent nextPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(pageName + ".fxml")));
+            Scene scene = new Scene(nextPage);
+            Stage primaryStage = (Stage) change.getScene().getWindow();
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

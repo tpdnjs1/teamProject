@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Setting">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Setting">
    <children>
       <Button fx:id="main" layoutX="26.0" layoutY="257.0" mnemonicParsing="false" onAction="#moveMain" prefHeight="35.0" prefWidth="35.0">
          <styleClass>
@@ -38,10 +38,14 @@
             <Pane layoutX="541.0" layoutY="203.0" prefHeight="320.0" prefWidth="245.0" stylesheets="@Design.css">
                <children>
                   <Pane layoutX="60.0" layoutY="35.0" prefHeight="125.0" prefWidth="125.0" styleClass="Lock" stylesheets="@Design.css" />
-                  <Label layoutX="83.0" layoutY="225.0" styleClass="shadow" text="correction">
+                  <Label fx:id="account" layoutX="83.0" layoutY="225.0" onMouseClicked="#moveAccount" text="correction">
                      <font>
                         <Font name="Corbel Bold" size="18.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="underline" />
+                     </styleClass>
                   </Label>
                </children>
                <styleClass>

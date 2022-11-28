@@ -10,10 +10,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.time.LocalDate;
 import java.util.Random;
 import java.util.ResourceBundle;
 
@@ -21,6 +19,7 @@ public class Questions implements Initializable {
 
     MovePage movePage = new MovePage();
     Random random = new Random();
+    private int randomNum = random.nextInt(100)+1;
 
     @FXML
     private Button main;
@@ -28,12 +27,15 @@ public class Questions implements Initializable {
     private Button question;
     @FXML
     private Button setting;
+    @FXML
+    private Button push;
+
 
     @FXML
     private TextArea answer;
 
     @FXML
-    private Label qNUm;
+    private Label qNum;
     @FXML
     private Label qChange;
 
@@ -86,10 +88,11 @@ public class Questions implements Initializable {
         }
     }
 
-    private void newQu(){
-        qNUm.setText((items.size()+1)+"th");
 
-        String sql = "SELECT * FROM `questions` WHERE `qNum` = "+ (random.nextInt(100)+1);
+    private void newQu(){
+        qNum.setText((items.size()+1)+"th");
+
+        String sql = "SELECT * FROM `questions` WHERE `qNum` = "+ randomNum;
         try {
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
@@ -101,8 +104,23 @@ public class Questions implements Initializable {
         }
     }
 
+    @FXML
     private void addList(){
-        
+        String sql = "INSERT INTO `answers`(`uid`, `qNum`, `answer`, `date`) VALUES (?,?,?,?)";
+
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, movePage.getUid());
+            pstmt.setString(2, String.valueOf(randomNum));
+            pstmt.setString(3, answer.getText());
+            pstmt.setDate(4, Date.valueOf(LocalDate.now()));
+            pstmt.executeUpdate();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+        QuList quList = new QuList(items.size()+1, String.valueOf(randomNum), answer.getText(), Date.valueOf(LocalDate.now()));
+
     }
 
 

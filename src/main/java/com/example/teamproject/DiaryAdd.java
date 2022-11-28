@@ -14,6 +14,7 @@ import java.time.LocalDate;
 
 public class DiaryAdd {
     MovePage movePage = new MovePage();
+    Main main = new Main();
 
     @FXML
     private TextField title;
@@ -49,7 +50,8 @@ public class DiaryAdd {
             e.printStackTrace();
         }
 
-        needAdd = true;
+        Diary diary = new Diary(title.getText(), Date.valueOf(LocalDate.now()), text.getText());
+        main.items.add(diary);
 
         Stage pop = (Stage) addBtn.getScene().getWindow();
         pop.close();

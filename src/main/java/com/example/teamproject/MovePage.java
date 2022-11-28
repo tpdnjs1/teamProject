@@ -59,7 +59,7 @@ public class MovePage {
         try {
             Parent nextScene = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(pageName + ".fxml")));
             Scene scene = new Scene(nextScene);
-            pop.setTitle("Crescent Account Book");
+            pop.setTitle("Crescent Book");
 
             pop.getIcons().add(new Image(getClass().getResourceAsStream("images/Crescent.png")));
 

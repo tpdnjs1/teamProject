@@ -47,8 +47,6 @@ public class DiaryAdd {
             e.printStackTrace();
         }
 
-        main.addDiaryList(title.getText(), Date.valueOf(LocalDate.now()), text.getText());
-
         Stage pop = (Stage) addBtn.getScene().getWindow();
         pop.close();
     }

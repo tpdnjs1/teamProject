@@ -23,7 +23,6 @@ public class DiaryAdd {
     @FXML
     private Button addBtn;
 
-    public Boolean needAdd = false;
 
 
 
@@ -50,8 +49,7 @@ public class DiaryAdd {
             e.printStackTrace();
         }
 
-        Diary diary = new Diary(title.getText(), Date.valueOf(LocalDate.now()), text.getText());
-        main.items.add(diary);
+        main.addDiaryList(title.getText(), Date.valueOf(LocalDate.now()), text.getText());
 
         Stage pop = (Stage) addBtn.getScene().getWindow();
         pop.close();

@@ -1,6 +1,5 @@
 package com.example.teamproject;
 
-import javafx.beans.binding.BooleanExpression;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -13,14 +12,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.time.Duration;
 import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.ResourceBundle;
 
 import static com.example.teamproject.Calendar.prn;
-import static java.lang.Thread.sleep;
-import static java.time.temporal.ChronoUnit.DAYS;
 
 public class Main implements Initializable {
 
@@ -69,21 +64,33 @@ public class Main implements Initializable {
     @FXML
     private Button nextMonthBtn;
     @FXML
-    public ListView<Diary> list;
+    public ListView<DiaryList> list;
 
-    public ObservableList<Diary> items;
+    public ObservableList<DiaryList> items;
 
-    public int idx;
+    private int idx;
 
     @FXML
     private Button confirmBtn;
+
+    private String stTitle;
+    private String stText;
+
+    public String getStTitle() {
+        return stTitle;
+    }
+
+    public String getStText() {
+        return stText;
+    }
 
     @FXML
     private void confirm() {
         idx = list.getSelectionModel().getSelectedIndex();
         if (idx >= 0) {
-
-            movePage.changeScene("Diary", confirmBtn);
+            stTitle = list.getSelectionModel().getSelectedItem().getTitle();
+            stText = list.getSelectionModel().getSelectedItem().getStText();
+            movePage.popUp("Diary", confirmBtn);
         } else {
             alert("일기를 선택해주세요.", null);
         }
@@ -119,12 +126,18 @@ public class Main implements Initializable {
 
         setCalendar();
 
-        addDiaryList();
+        addAllDiaryList();
 
         dDay();
     }
 
-    public void addDiaryList() {
+    public void addDiaryList(String title, Date dDay, String text) {
+        DiaryList diaryList = new DiaryList(title, dDay, text);
+        items.add(diaryList);
+    }
+
+
+    private void addAllDiaryList() {
         if (items.size() != 0) {
             while (items.size() != 0) {
                 items.remove(0);
@@ -141,8 +154,8 @@ public class Main implements Initializable {
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
             while (rs.next()) {
-                Diary diary = new Diary(rs.getString("title"), rs.getDate("date"), rs.getString("text"));
-                items.add(diary);
+                DiaryList diaryList = new DiaryList(rs.getString("title"), rs.getDate("date"), rs.getString("text"));
+                items.add(diaryList);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -158,7 +171,7 @@ public class Main implements Initializable {
             month = 12;
         }
         setCalendar();
-        addDiaryList();
+        addAllDiaryList();
     }
 
     @FXML
@@ -169,7 +182,7 @@ public class Main implements Initializable {
             month = 1;
         }
         setCalendar();
-        addDiaryList();
+        addAllDiaryList();
     }
 
 

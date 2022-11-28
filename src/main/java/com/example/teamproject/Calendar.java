@@ -77,22 +77,8 @@ public class Calendar {
 
         int day = bNum-start;
 
-/*        //시작 요일만큼 빈공간
-        for (int i = 1; i <= start; i++) {
-            System.out.print("\t");
-        }
-
-        //달력출력
-        for (int i = 1; i <= last; i++) {
-            System.out.printf("%d\t", i);
-            start++;
-            if (start % 7 == 0) {
-                System.out.println();
-            }
-        }*/
-
         if (start >= bNum || last < day){
-            btn.setText(" ");
+            btn.setText("");
         } else {
             btn.setText(String.valueOf(day));
         }

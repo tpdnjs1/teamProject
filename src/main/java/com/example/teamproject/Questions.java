@@ -120,7 +120,7 @@ public class Questions implements Initializable {
         }
 
         QuList quList = new QuList(items.size()+1, String.valueOf(randomNum), answer.getText(), Date.valueOf(LocalDate.now()));
-
+        items.add(quList);
     }
 
 

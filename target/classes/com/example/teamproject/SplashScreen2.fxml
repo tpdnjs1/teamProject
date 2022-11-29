@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="container" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen2">
+<AnchorPane fx:id="container" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen2">
    <children>
       <Pane layoutX="100.0" layoutY="150.0" prefHeight="350.0" prefWidth="350.0" styleClass="Diary" stylesheets="@Design.css" />
       <Label layoutX="638.0" layoutY="178.0" text="Diary">

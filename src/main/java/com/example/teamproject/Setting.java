@@ -40,7 +40,7 @@ public class Setting implements Initializable {
     private void moveCorrection(){movePage.popUpLabel("PopUp",account);}
     @FXML
     private void moveSignOut() {
-        movePage.popUpLabel("Login", signOut);
+        movePage.changeSceneLabel("Login", signOut);
     }
 
 

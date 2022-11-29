@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Questions">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Questions">
    <children>
       <Button fx:id="main" layoutX="26.0" layoutY="257.0" mnemonicParsing="false" onAction="#moveMain" prefHeight="35.0" prefWidth="35.0" stylesheets="@Design.css">
          <styleClass>
@@ -79,9 +79,9 @@
                   </Label>
                </children>
             </HBox>
-            <Label fx:id="qChange" layoutX="113.0" layoutY="90.0" text="질문 내용">
+            <Label fx:id="qChange" layoutX="117.0" layoutY="86.0" text="질문 내용">
                <font>
-                  <Font name="HYSinMyeongJo-Medium" size="22.0" />
+                  <Font name="Hancom Gothic Regular" size="22.0" />
                </font></Label>
             <Label layoutX="529.0" layoutY="171.0" text="A">
                <font>
@@ -100,16 +100,6 @@
                   <String fx:value="BtnRound" />
                </styleClass>
             </Button>
-            <Label layoutX="260.0" layoutY="200.0" text="Time left to answer questions">
-               <font>
-                  <Font name="Corbel" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="443.0" layoutY="201.0" text="00:00:00">
-               <font>
-                  <Font name="Courier New" size="14.0" />
-               </font>
-            </Label>
          </children></Pane>
    </children>
 </AnchorPane>

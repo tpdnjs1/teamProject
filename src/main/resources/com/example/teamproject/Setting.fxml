@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Setting">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.Setting">
    <children>
       <Button fx:id="main" layoutX="26.0" layoutY="257.0" mnemonicParsing="false" onAction="#moveMain" prefHeight="35.0" prefWidth="35.0">
          <styleClass>
@@ -57,7 +57,7 @@
             <Pane layoutX="285.0" layoutY="203.0" prefHeight="320.0" prefWidth="245.0" stylesheets="@Design.css">
                <children>
                   <Pane layoutX="60.0" layoutY="35.0" prefHeight="125.0" prefWidth="125.0" styleClass="User" stylesheets="@Design.css" />
-                  <Label fx:id="name" layoutX="105.0" layoutY="231.0" styleClass="shadow" text="이름">
+                  <Label fx:id="name" layoutX="105.0" layoutY="230.0" styleClass="shadow" text="이름">
                      <font>
                         <Font name="Hancom Gothic Regular" size="18.0" />
                      </font>

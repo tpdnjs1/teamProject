@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen3">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamproject.SplashScreen3">
    <children>
       <Button fx:id="btn" layoutX="586.0" layoutY="443.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="30.0" prefWidth="170.0" stylesheets="@Design.css" text="NEXT">
          <styleClass>

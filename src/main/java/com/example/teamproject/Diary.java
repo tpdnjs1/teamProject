@@ -8,7 +8,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Diary implements Initializable {
-    Main main = new Main();
 
     @FXML
     private Label title;
@@ -18,9 +17,11 @@ public class Diary implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Main main = new Main();
-        title.setText(main.getMainTitle());
-        text.setText(main.getMainText());
+        DiaryList diaryList = new DiaryList();
+
+        System.out.println(diaryList.getTitle() + diaryList.getStText());
+        title.setText(diaryList.getTitle());
+        text.setText(diaryList.getStText());
     }
 
 }

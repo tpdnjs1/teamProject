@@ -73,25 +73,18 @@ public class Main implements Initializable {
     private String mainTitle;
     private String mainText;
 
-    public String getMainTitle() {
-        return mainTitle;
-    }
-    public void setMainTitle(String mainTitle) {
-        this.mainTitle = mainTitle;
-    }
-    public String getMainText() {
-        return mainText;
-    }
-    public void setMainText(String mainText) {
-        this.mainText = mainText;
-    }
 
     @FXML
     private void confirm() {
         int idx = list.getSelectionModel().getSelectedIndex();
         if (idx >= 0) {
-            setMainTitle(list.getSelectionModel().getSelectedItem().getTitle());
-            setMainText(list.getSelectionModel().getSelectedItem().getStText());
+            DiaryList diaryList = new DiaryList();
+            diaryList.setTitle(list.getSelectionModel().getSelectedItem().getTitle());
+            diaryList.setDate(list.getSelectionModel().getSelectedItem().getDate());
+            diaryList.setStText(list.getSelectionModel().getSelectedItem().getStText());
+
+            System.out.println(diaryList.getTitle() + diaryList.getStText());
+
             movePage.popUp("Diary", confirmBtn);
         } else {
             alert("일기를 선택해주세요.", null);
@@ -133,7 +126,10 @@ public class Main implements Initializable {
     }
 
     public void addDiaryList(String title, Date dDay, String text) {
-        DiaryList diaryList = new DiaryList(title, dDay, text);
+        DiaryList diaryList = new DiaryList();
+        diaryList.setTitle(title);
+        diaryList.setStText(text);
+        diaryList.setDate(dDay);
         items.add(diaryList);
     }
 
@@ -158,7 +154,10 @@ public class Main implements Initializable {
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
             while (rs.next()) {
-                DiaryList diaryList = new DiaryList(rs.getString("title"), rs.getDate("date"), rs.getString("text"));
+                DiaryList diaryList = new DiaryList();
+                diaryList.setTitle(rs.getString("title"));
+                diaryList.setDate(rs.getDate("date"));
+                diaryList.setStText(rs.getString("text"));
                 items.add(diaryList);
             }
         } catch (Exception e) {

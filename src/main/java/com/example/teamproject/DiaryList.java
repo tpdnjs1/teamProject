@@ -8,10 +8,7 @@ public class DiaryList {
     private Date date;
 
 
-    public DiaryList(String title, Date date, String stText) {
-        this.title = title;
-        this.stText = stText;
-        this.date = date;
+    public DiaryList() {
     }
 
 
@@ -41,7 +38,7 @@ public class DiaryList {
 
     @Override
     public String toString() {
-        return "" + date + " : " + title;
+        return date + " : " + title;
     }
 
 

@@ -793,7 +793,7 @@ public class Main implements Initializable {
 
     public void dDay() {
         LocalDate fromDate = LocalDate.now();
-        LocalDate toDate = LocalDate.of(2022, 12, 31);
+        LocalDate toDate = LocalDate.of(fromDate.getYear(), 12, 31);
         DdayLabel.setText("D - " + Duration.between(fromDate.atStartOfDay(), toDate.atStartOfDay()).toDays());
 
     }

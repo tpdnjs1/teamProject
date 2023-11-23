@@ -29,6 +29,8 @@ public class Questions implements Initializable {
     private Button setting;
     @FXML
     private Button push;
+    @FXML
+    private Button inquire;
 
 
     @FXML
